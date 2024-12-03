@@ -1,0 +1,10 @@
+[
+  {
+    "id": 1,
+    "datetime": "2024-11-28 04:06:10.034090",
+    "class_name": "Users",
+    "func_name": "update",
+    "func_input": "('6747caa4a9d923b1c68cc8da', {'name': 'Booki', 'color': 'green'})",
+    "func_output": "True"
+  }
+]
