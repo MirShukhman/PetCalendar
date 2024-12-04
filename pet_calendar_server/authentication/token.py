@@ -1,9 +1,4 @@
 
-# generate token 
-# save token in db 
-# delete token from db 
-# retrive token from db
-
 import jwt
 from app import create_app
 from log.logger import Logger
