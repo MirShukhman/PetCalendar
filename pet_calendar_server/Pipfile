@@ -8,6 +8,7 @@ flask = "*"
 pymongo = "*"
 flask-pymongo = "*"
 python-dotenv = "*"
+jwt = "*"
 
 [dev-packages]
 

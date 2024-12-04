@@ -6,5 +6,109 @@
     "func_name": "update",
     "func_input": "('6747caa4a9d923b1c68cc8da', {'name': 'Booki', 'color': 'green'})",
     "func_output": "True"
+  },
+  {
+    "id": 2,
+    "datetime": "2024-12-04 01:26:25.108863",
+    "class_name": "Users",
+    "func_name": "get_by_id",
+    "func_input": "6747caa4a9d923b1c68cc8da",
+    "func_output": "{'_id': ObjectId('6747caa4a9d923b1c68cc8da'), 'name': 'Booki', 'color': 'green'}"
+  },
+  {
+    "id": 3,
+    "datetime": "2024-12-04 01:26:39.914295",
+    "class_name": "Users",
+    "func_name": "get_by_id",
+    "func_input": "6747caa4a9d923b1c68cc8da",
+    "func_output": "{'_id': ObjectId('6747caa4a9d923b1c68cc8da'), 'name': 'Booki'}"
+  },
+  {
+    "id": 4,
+    "datetime": "2024-12-04 01:27:03.192148",
+    "class_name": "Users",
+    "func_name": "get_by_id",
+    "func_input": "6747caa4a9d923b1c68cc8da",
+    "func_output": "{'_id': ObjectId('6747caa4a9d923b1c68cc8da'), 'name': 'Booki'}"
+  },
+  {
+    "id": 5,
+    "datetime": "2024-12-04 01:28:53.455923",
+    "class_name": "Users",
+    "func_name": "get_by_id",
+    "func_input": "6747caa4a9d923b1c68cc8da",
+    "func_output": "{'name': 'Booki'}"
+  },
+  {
+    "id": 6,
+    "datetime": "2024-12-04 01:34:44.491577",
+    "class_name": "Users",
+    "func_name": "get_fields_by_filter",
+    "func_input": "{'color': 'green'}",
+    "func_output": "[{'_id': '6747caa4a9d923b1c68cc8da', 'name': 'Booki'}]"
+  },
+  {
+    "id": 7,
+    "datetime": "2024-12-04 01:39:36.231205",
+    "class_name": "Users",
+    "func_name": "get_fields_by_id",
+    "func_input": "fjfjfj",
+    "func_output": "'fjfjfj' is not a valid ObjectId, it must be a 12-byte input or a 24-character hex string"
+  },
+  {
+    "id": 8,
+    "datetime": "2024-12-04 01:40:12.633718",
+    "class_name": "Users",
+    "func_name": "get_fields_by_id",
+    "func_input": "fjfjfj",
+    "func_output": "'fjfjfj' is not a valid ObjectId, it must be a 12-byte input or a 24-character hex string"
+  },
+  {
+    "id": 9,
+    "datetime": "2024-12-04 01:40:12.647700",
+    "class_name": "Token",
+    "func_name": "get_token",
+    "func_input": "fjfjfj",
+    "func_output": "None"
+  },
+  {
+    "id": 10,
+    "datetime": "2024-12-04 01:40:56.576876",
+    "class_name": "Users",
+    "func_name": "get_fields_by_id",
+    "func_input": "6747caa4a9d923b1c68cc8da",
+    "func_output": "None"
+  },
+  {
+    "id": 11,
+    "datetime": "2024-12-04 01:40:56.592892",
+    "class_name": "Token",
+    "func_name": "get_token",
+    "func_input": "6747caa4a9d923b1c68cc8da",
+    "func_output": "None"
+  },
+  {
+    "id": 12,
+    "datetime": "2024-12-04 01:41:28.108049",
+    "class_name": "Users",
+    "func_name": "get_fields_by_id",
+    "func_input": "6747caa4a9d923b1c68cc8da",
+    "func_output": "None"
+  },
+  {
+    "id": 13,
+    "datetime": "2024-12-04 01:41:28.131053",
+    "class_name": "Token",
+    "func_name": "get_token",
+    "func_input": "6747caa4a9d923b1c68cc8da",
+    "func_output": "None"
+  },
+  {
+    "id": 14,
+    "datetime": "2024-12-04 01:55:27.041550",
+    "class_name": "Users",
+    "func_name": "delete_fields",
+    "func_input": "('6747caa4a9d923b1c68cc8da', ['color'])",
+    "func_output": "True"
   }
 ]
