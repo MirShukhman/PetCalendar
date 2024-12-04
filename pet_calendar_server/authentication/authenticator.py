@@ -17,11 +17,15 @@ class Authenticator:
         Output: user_id (str) / False
         """
         try:
-            secret_key = create_app().config['SECRET_KEY']
-            decoded_data = jwt.decode(token, secret_key, algorithms=['HS256'])
-            user_id = decoded_data.get('user_id', None)
-            output = user_id
-            return user_id
+            decoded_data = self._decode_token(token)
+            if decoded_data:
+                user_id = decoded_data['user_id']
+                output = user_id
+                return user_id
+            
+            else:
+                output = False
+                return False
             
         except Exception as e:
             output = str(e)
@@ -29,3 +33,24 @@ class Authenticator:
         
         finally:
             logger.log('Authenticator','authenticate_client', token, output)
+            
+            
+    def _decode_token(self, token):
+        """
+        04.12.24
+        Mir
+        Input: token as str    
+        Output: decoded_data(dict) / False
+        """
+        try:
+            secret_key = create_app().config['SECRET_KEY']
+            decoded_data = jwt.decode(token, secret_key, algorithms=['HS256'])
+            output = decoded_data
+            return decoded_data
+            
+        except Exception as e:
+            output = str(e)
+            return False
+        
+        finally:
+            logger.log('Authenticator','_decode_token', token, output)

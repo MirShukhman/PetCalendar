@@ -9,6 +9,8 @@ pymongo = "*"
 flask-pymongo = "*"
 python-dotenv = "*"
 jwt = "*"
+validate-email-address = "*"
+dnspython = "*"
 
 [dev-packages]
 

@@ -1,5 +1,6 @@
 
 import jwt
+from datetime import datetime
 from app import create_app
 from log.logger import Logger
 from db_handler.users import Users
@@ -19,8 +20,10 @@ class Token:
         Output: token (str) / False
         """
         try:
+            now = datetime.now()
             token = jwt.encode(
-                {'user_id': user_id},
+                {'user_id': user_id,
+                'created': now},
                 create_app().config['SECRET_KEY'],
                 algorithm='HS256'
             )
