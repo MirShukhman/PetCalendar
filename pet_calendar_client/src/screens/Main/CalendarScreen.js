@@ -17,7 +17,7 @@ const CalendarScreen = () => {
   });
 
   const markedDates = Object.keys(events).reduce((acc, date) => {
-    acc[date] = { marked: true, dotColor: 'red' }; // You can customize the dotColor based on event type if needed
+    acc[date] = { marked: true, dotColor: 'red' };
     return acc;
   }, {});
 
@@ -28,37 +28,39 @@ const CalendarScreen = () => {
     setSelectedDate(day.dateString);
   };
   
+  // This is needed because the calendar does not re-render on code change naturally, so we bind some key to it that would change on us refocusing on the app.
+  // the key thing should probably be removed after we settle on the UI, so that there are no unneeded re-renders for the calendar.
 useFocusEffect(React.useCallback(() => {
   setCalendarKey((prevKey) => prevKey + 1);
 }, []));
+
     return(
         <MainScreensWrapper title="Calendar">
             <Calendar 
               key={calendarKey}
               onDayPress={onDatePress}
 
-              
               theme={{
-                calendarBackground: '#f0f070', // Background color of the calendar
-                textSectionTitleColor: '#4a90e2', // Month and day titles
-                selectedDayBackgroundColor: '#ff6347', // Background of selected day
-                selectedDayTextColor: '#ffffff', // Text color of selected day
-                todayTextColor: '#ff6347', // Today's date color
-                dayTextColor: '#2d4150', // Default day text color
-                dotColor: '#00adf5', // Default dot color
-                arrowColor: '#4a90e2', // Navigation arrows
+                calendarBackground: '#f0f070',
+                textSectionTitleColor: '#4a90e2',
+                selectedDayBackgroundColor: '#ff6347',
+                selectedDayTextColor: '#ffffff',
+                todayTextColor: '#ff6347',
+                dayTextColor: '#2d4150',
+                dotColor: '#00adf5',
+                arrowColor: '#4a90e2',
                 textDayFontWeight: 'bold',
               }}
 
               dayComponent={({ date, state }) => {
                 const isDisabled = state === 'disabled';
                 const isSelected = date.dateString === selectedDate;
-                const hasEvent = !!markedDates[date.dateString]?.marked; // Check if the day is marked
-                const eventColor = markedDates[date.dateString]?.dotColor || '#00adf5'; // Use dot color if available
+                const hasEvent = !!markedDates[date.dateString]?.marked;
+                const eventColor = markedDates[date.dateString]?.dotColor || '#00adf5';
               
                 const handlePress = () => {
                   if (!isDisabled) {
-                    setSelectedDate(date.dateString); // Update selected date
+                    setSelectedDate(date.dateString);
                   }
                 };
               
@@ -71,7 +73,7 @@ useFocusEffect(React.useCallback(() => {
                       borderColor: '#808040',
                       padding: 10,
                       margin: -8,
-                      backgroundColor: isSelected ? '#a0f070' : '#f0f070', // Highlight selected day
+                      backgroundColor: isSelected ? '#a0f070' : '#f0f070',
                       alignItems: 'center',
                     }}
                   >
@@ -83,10 +85,10 @@ useFocusEffect(React.useCallback(() => {
                         style={{
                           width: 6,
                           height: 6,
-                          borderRadius: 3, // Makes it circular
-                          backgroundColor: eventColor, // Use the dot color
+                          borderRadius: 3,
+                          backgroundColor: eventColor,
                           marginTop:5,
-                          position:'absolute' // Space between the day number and the dot
+                          position:'absolute'
                         }}
                       />
                     )}
@@ -95,12 +97,14 @@ useFocusEffect(React.useCallback(() => {
               }}
             />
           <View style={styles.eventBox}>
-            <Text style={styles.eventBoxTitle}>Events for {selectedDate || '...'}</Text>
+            <Text style={styles.eventBoxTitle}>{selectedDate ? selectedDate : 'No Date Selected'}</Text>
             {events[selectedDate]?.length ? (
               events[selectedDate].map((event, index) => (
-                <Text key={index} style={styles.eventText}>
-                  - {event.title}
-                </Text>
+                <View style={styles.singleEvent}>
+                  <Text key={index} style={styles.eventText}>
+                    - {event.title}
+                  </Text>
+                </View>
               ))
             ) : (
               <Text style={styles.eventText}>No events</Text>
@@ -130,9 +134,15 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   eventText: {
-    fontSize: 14,
+    fontSize: 15,
     color: '#333',
   },
+  singleEvent:{
+    backgroundColor:'#a0a8af',
+    borderBottomWidth:1,
+    padding:5,
+    
+  }
 });
 
 

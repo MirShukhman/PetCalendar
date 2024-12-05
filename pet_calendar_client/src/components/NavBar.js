@@ -7,14 +7,14 @@ const NavBar = ({ state, descriptors, navigation }) => {
     <View style={styles.navBarWrapper}>
             <LinearGradient
               colors={[
-                'rgba(0,0,0,0.4)',  // Outer dark
-                'rgba(0,0,0,0)',  // Middle lighter
-                'rgba(0,0,0,0.4)'     // Center transparent
+                'rgba(0,0,0,0.4)', 
+                'rgba(0,0,0,0)',  
+                'rgba(0,0,0,0.4)' 
               ]}
-              locations={[0, 0.5, 1]} // Adjust spread of colors
+              locations={[0, 0.5, 1]}
               style={styles.overlay}
               start={{ x: 0, y: 0 }}
-              end={{ x: 1, y: 1 }} // Radial effect approximation
+              end={{ x: 1, y: 1 }}
               pointerEvents="none"
           />
       <View style={styles.navBarContainer}>
@@ -53,7 +53,7 @@ const NavBar = ({ state, descriptors, navigation }) => {
                   <View style={styles.buttonContent}>
                   {isFocused && (
                       <Image
-                      source={require('../assets/images/paw_black.png')} // Your paw image
+                      source={require('../assets/images/paw_black.png')}
                       style={styles.pawBackground}
                       />
                   )}
@@ -79,7 +79,7 @@ const styles = StyleSheet.create({
     left: 0,
     right: 0,
     bottom: 0,
-    zIndex: 1, // Ensure overlay is on top
+    zIndex: 1,
   },
   navBarContainer: {
     flexDirection: 'row',
