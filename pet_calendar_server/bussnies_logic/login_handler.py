@@ -1,5 +1,6 @@
 from log.logger import Logger
 from authentication.token import Token
+from authentication.authenticator import Authenticator
 from db_handler.users import Users
 from .email_handler import EmailHandler
 import random
@@ -9,6 +10,8 @@ logger = Logger()
 class LoginHandler:
     def __init__(self):
         self.email = EmailHandler()
+        self.token = Token()
+        self.authenticator = Authenticator()
     
     def _generate_random_code(self):
         return random.randint(100000, 999999)
@@ -20,7 +23,7 @@ class LoginHandler:
         Mir
         Checks that user with credentials dosent exist, creates code, emails code, creates user in db with the email_code field.
         Input: email, phone, nickname (all str)
-        Otput: True / dict of {'type_err':'err'}
+        Otput: True + True / False + dict of {'type_err':'err'}
         '''
         try:
             existining_user = Users.get_obj_by_filter({'email': email, 'phone': phone})
@@ -34,63 +37,134 @@ class LoginHandler:
                 create_user = Users.add({'email': email, 'phone': phone, 'nickname': nickname, 'email_code': code})
                 if create_user:
                     output = True
-                    return True
+                    return True, True
                 
                 else:
                     output = 'internal_err'
-                    return {'internal_err': output}
+                    return False, {'internal_err': output}
             
             else:
                 output = 'invalid email adress'
-                return {'user_err': output}
+                return False, {'user_err': output}
 
             
         except Exception as e:
             output = str(e)
-            return {'internal_err': output}
+            return False, {'internal_err': output}
             
         finally:
             logger.log('LoginHandler','sign_up',(email, phone, nickname), output)
     
     
     def login(self, email, phone):
-        # seek user in db by email + phone 
-        # if found, generate code 
-        # save code in db Users collection 
-        # send mail with code 
+        '''
+        04.12.24
+        Mir
+        Finds user in db by email+phone, sends code by email, saves code in db.
+        Input: email, phone (all str)
+        Otput: True + True / False + dict of {'type_err':'err'}
+        '''
         try:
             existining_user = Users.get_obj_by_filter({'email': email, 'phone': phone})
             if existining_user:
                 code = self._generate_random_code()
                 send_email = self.email.send_verification_email(email,code)
                 if send_email:
-                    user_id = existining_user['_id']
-                    save_code = Users.update(user_id,{'email_code',code})
+                    user_id = existining_user[0]['_id']
+                    save_code = Users.update(user_id,{'email_code': code})
+                    if save_code:
+                        output = True
+                        return True, True
                 
-                
+                    else:
+                        output = 'internal_err'
+                        return False, {'internal_err': output}
+                         
             else:
                 output = 'invalid credantials'
-                return {'user_err': output}
+                return False, {'user_err': output}
              
         except Exception as e:
             output = str(e)
-            return {'internal_err': output}
+            return False, {'internal_err': output}
             
         finally:
             logger.log('LoginHandler','login',(email, phone), output)
         
+        
     def confirm_login(self, email, phone, code):
-        pass
-        # seek user in db by email + phone 
-        # get code from db 
-        # cofirm code 
-        # seek token
-        #   if found, return token 
-        # if no token, generate token
-        # save token in db
-        # return token
+        '''
+        05.12.24
+        Mir
+        Finds user in db by email+phone, compares db code to given code, 
+        checks if token exists, if yes returns existing token, if not generates token
+        and returns it. 
+        Input: email, phone, code (all str)
+        Otput: True + dict of {'token':'token'} / False + dict of {'type_err':'err'}
+        '''
+        try:
+            existining_user = Users.get_obj_by_filter({'email': email, 'phone': phone})
+            if existining_user:
+                db_code = str(existining_user[0]['email_code'])
+                user_id = existining_user[0]['_id']
+                if db_code == code:
+                    if existining_user[0].get('token'):
+                        delete_code = Users.delete_fields(user_id, ['email_code'])
+                        output = True
+                        return True, {'token':existining_user[0]['token']}
+                    
+                    else:
+                        user_id = existining_user[0]['_id']
+                        token = self.token.generate_token(user_id)
+                        
+                        if token:
+                            delete_code = Users.delete_fields(user_id, ['email_code'])
+                            output = True
+                            return True, {'token':token}
+                        
+                        else:
+                            output = 'internal_err'
+                            return False, {'internal_err': output}
+                            
+                else:
+                    output = 'wrong verification code'
+                    return False, {'user_err': output}  
+                
+            else:
+                output = 'invalid credantials'
+                return False, {'user_err': output}
+             
+        except Exception as e:
+            output = str(e)
+            return False, {'internal_err': output}
+            
+        finally:
+            logger.log('LoginHandler','confirm_login',(email, phone), output)
+                
         
         
     def logout(self, token):
-        pass
-        # delete token fron db 
+        '''
+        05.12.24
+        Mir
+        Deletes token from db.
+        Input: token (str)
+        Otput: True / False
+        '''
+        try:
+            user_id = self.authenticator.authenticate_client(token)
+            if user_id:
+                logout = self.token.delete_token(user_id)
+                output = True if logout else False
+                return output
+                
+            else:
+                output = False
+                return False
+            
+        except Exception as e:
+            output = str(e)
+            return False
+            
+        finally:
+            logger.log('LoginHandler','logout',token, output)

@@ -1,0 +1,666 @@
+[
+  {
+    "id": 1,
+    "datetime": "2024-12-04 17:11:45.777954",
+    "class_name": "Users",
+    "func_name": "get_obj_by_filter",
+    "func_input": "{'email': 'dgjhdjg5h46fg45j654j5hj65dfgdssdh@pookie.com', 'phone': '5555'}",
+    "func_output": "[{'_id': '675065567473f11069e7e4d3', 'email': 'dgjhdjg5h46fg45j654j5hj65dfgdssdh@pookie.com', 'phone': '5555', 'nickname': 'Arty', 'email_code': 554934}]"
+  },
+  {
+    "id": 2,
+    "datetime": "2024-12-04 17:11:45.796124",
+    "class_name": "EmailHandler",
+    "func_name": "_create_verification_message",
+    "func_input": "408617",
+    "func_output": "True"
+  },
+  {
+    "id": 3,
+    "datetime": "2024-12-04 17:11:47.205977",
+    "class_name": "EmailHandler",
+    "func_name": "_send_email",
+    "func_input": "('dgjhdjg5h46fg45j654j5hj65dfgdssdh@pookie.com', 'Your Verification Code')",
+    "func_output": "True"
+  },
+  {
+    "id": 4,
+    "datetime": "2024-12-04 17:11:47.229970",
+    "class_name": "EmailHandler",
+    "func_name": "send_verification_email",
+    "func_input": "('dgjhdjg5h46fg45j654j5hj65dfgdssdh@pookie.com', 408617)",
+    "func_output": "True"
+  },
+  {
+    "id": 5,
+    "datetime": "2024-12-04 17:11:47.254976",
+    "class_name": "LoginHandler",
+    "func_name": "login",
+    "func_input": "('dgjhdjg5h46fg45j654j5hj65dfgdssdh@pookie.com', '5555')",
+    "func_output": "list indices must be integers or slices, not str"
+  },
+  {
+    "id": 6,
+    "datetime": "2024-12-04 20:32:17.313798",
+    "class_name": "Users",
+    "func_name": "get_obj_by_filter",
+    "func_input": "{'email': 'dgjhdjg5h46fg45j654j5hj65dfgdssdh@pookie.com', 'phone': '5555'}",
+    "func_output": "[{'_id': '675065567473f11069e7e4d3', 'email': 'dgjhdjg5h46fg45j654j5hj65dfgdssdh@pookie.com', 'phone': '5555', 'nickname': 'Arty', 'email_code': 554934}]"
+  },
+  {
+    "id": 7,
+    "datetime": "2024-12-04 20:32:17.333799",
+    "class_name": "EmailHandler",
+    "func_name": "_create_verification_message",
+    "func_input": "812167",
+    "func_output": "True"
+  },
+  {
+    "id": 8,
+    "datetime": "2024-12-04 20:32:18.665933",
+    "class_name": "EmailHandler",
+    "func_name": "_send_email",
+    "func_input": "('dgjhdjg5h46fg45j654j5hj65dfgdssdh@pookie.com', 'Your Verification Code')",
+    "func_output": "True"
+  },
+  {
+    "id": 9,
+    "datetime": "2024-12-04 20:32:18.684938",
+    "class_name": "EmailHandler",
+    "func_name": "send_verification_email",
+    "func_input": "('dgjhdjg5h46fg45j654j5hj65dfgdssdh@pookie.com', 812167)",
+    "func_output": "True"
+  },
+  {
+    "id": 10,
+    "datetime": "2024-12-04 20:32:18.707923",
+    "class_name": "LoginHandler",
+    "func_name": "login",
+    "func_input": "('dgjhdjg5h46fg45j654j5hj65dfgdssdh@pookie.com', '5555')",
+    "func_output": "list indices must be integers or slices, not str"
+  },
+  {
+    "id": 11,
+    "datetime": "2024-12-04 20:32:54.049629",
+    "class_name": "Users",
+    "func_name": "get_obj_by_filter",
+    "func_input": "{'email': 'dgjhdjg5h46fg45j654j5hj65dfgdssdh@pookie.com', 'phone': '5555'}",
+    "func_output": "[{'_id': '675065567473f11069e7e4d3', 'email': 'dgjhdjg5h46fg45j654j5hj65dfgdssdh@pookie.com', 'phone': '5555', 'nickname': 'Arty', 'email_code': 554934}]"
+  },
+  {
+    "id": 12,
+    "datetime": "2024-12-04 20:32:54.075623",
+    "class_name": "EmailHandler",
+    "func_name": "_create_verification_message",
+    "func_input": "257980",
+    "func_output": "True"
+  },
+  {
+    "id": 13,
+    "datetime": "2024-12-04 20:32:55.246291",
+    "class_name": "EmailHandler",
+    "func_name": "_send_email",
+    "func_input": "('dgjhdjg5h46fg45j654j5hj65dfgdssdh@pookie.com', 'Your Verification Code')",
+    "func_output": "True"
+  },
+  {
+    "id": 14,
+    "datetime": "2024-12-04 20:32:55.266296",
+    "class_name": "EmailHandler",
+    "func_name": "send_verification_email",
+    "func_input": "('dgjhdjg5h46fg45j654j5hj65dfgdssdh@pookie.com', 257980)",
+    "func_output": "True"
+  },
+  {
+    "id": 15,
+    "datetime": "2024-12-04 20:32:55.285317",
+    "class_name": "LoginHandler",
+    "func_name": "login",
+    "func_input": "('dgjhdjg5h46fg45j654j5hj65dfgdssdh@pookie.com', '5555')",
+    "func_output": "list indices must be integers or slices, not str"
+  },
+  {
+    "id": 16,
+    "datetime": "2024-12-04 20:33:31.738641",
+    "class_name": "Users",
+    "func_name": "get_obj_by_filter",
+    "func_input": "{'email': 'dgjhdjg5h46fg45j654j5hj65dfgdssdh@pookie.com', 'phone': '5555'}",
+    "func_output": "[{'_id': '675065567473f11069e7e4d3', 'email': 'dgjhdjg5h46fg45j654j5hj65dfgdssdh@pookie.com', 'phone': '5555', 'nickname': 'Arty', 'email_code': 554934}]"
+  },
+  {
+    "id": 17,
+    "datetime": "2024-12-04 20:33:31.758649",
+    "class_name": "EmailHandler",
+    "func_name": "_create_verification_message",
+    "func_input": "892874",
+    "func_output": "True"
+  },
+  {
+    "id": 18,
+    "datetime": "2024-12-04 20:33:33.060425",
+    "class_name": "EmailHandler",
+    "func_name": "_send_email",
+    "func_input": "('dgjhdjg5h46fg45j654j5hj65dfgdssdh@pookie.com', 'Your Verification Code')",
+    "func_output": "True"
+  },
+  {
+    "id": 19,
+    "datetime": "2024-12-04 20:33:33.080413",
+    "class_name": "EmailHandler",
+    "func_name": "send_verification_email",
+    "func_input": "('dgjhdjg5h46fg45j654j5hj65dfgdssdh@pookie.com', 892874)",
+    "func_output": "True"
+  },
+  {
+    "id": 20,
+    "datetime": "2024-12-04 20:33:33.136435",
+    "class_name": "Users",
+    "func_name": "update",
+    "func_input": "('675065567473f11069e7e4d3', {892874, 'email_code'})",
+    "func_output": "cannot encode object: {892874, 'email_code'}, of type: <class 'set'>"
+  },
+  {
+    "id": 21,
+    "datetime": "2024-12-04 20:33:33.163411",
+    "class_name": "LoginHandler",
+    "func_name": "login",
+    "func_input": "('dgjhdjg5h46fg45j654j5hj65dfgdssdh@pookie.com', '5555')",
+    "func_output": "internal_err"
+  },
+  {
+    "id": 22,
+    "datetime": "2024-12-04 20:34:09.080413",
+    "class_name": "Users",
+    "func_name": "get_obj_by_filter",
+    "func_input": "{'email': 'dgjhdjg5h46fg45j654j5hj65dfgdssdh@pookie.com', 'phone': '5555'}",
+    "func_output": "[{'_id': '675065567473f11069e7e4d3', 'email': 'dgjhdjg5h46fg45j654j5hj65dfgdssdh@pookie.com', 'phone': '5555', 'nickname': 'Arty', 'email_code': 554934}]"
+  },
+  {
+    "id": 23,
+    "datetime": "2024-12-04 20:34:09.101414",
+    "class_name": "EmailHandler",
+    "func_name": "_create_verification_message",
+    "func_input": "771051",
+    "func_output": "True"
+  },
+  {
+    "id": 24,
+    "datetime": "2024-12-04 20:34:10.259998",
+    "class_name": "EmailHandler",
+    "func_name": "_send_email",
+    "func_input": "('dgjhdjg5h46fg45j654j5hj65dfgdssdh@pookie.com', 'Your Verification Code')",
+    "func_output": "True"
+  },
+  {
+    "id": 25,
+    "datetime": "2024-12-04 20:34:10.279502",
+    "class_name": "EmailHandler",
+    "func_name": "send_verification_email",
+    "func_input": "('dgjhdjg5h46fg45j654j5hj65dfgdssdh@pookie.com', 771051)",
+    "func_output": "True"
+  },
+  {
+    "id": 26,
+    "datetime": "2024-12-04 20:34:10.335932",
+    "class_name": "Users",
+    "func_name": "update",
+    "func_input": "('675065567473f11069e7e4d3', {771051, 'email_code'})",
+    "func_output": "cannot encode object: {771051, 'email_code'}, of type: <class 'set'>"
+  },
+  {
+    "id": 27,
+    "datetime": "2024-12-04 20:34:10.361960",
+    "class_name": "LoginHandler",
+    "func_name": "login",
+    "func_input": "('dgjhdjg5h46fg45j654j5hj65dfgdssdh@pookie.com', '5555')",
+    "func_output": "internal_err"
+  },
+  {
+    "id": 28,
+    "datetime": "2024-12-04 20:35:04.310370",
+    "class_name": "Users",
+    "func_name": "get_obj_by_filter",
+    "func_input": "{'email': 'dgjhdjg5h46fg45j654j5hj65dfgdssdh@pookie.com', 'phone': '5555'}",
+    "func_output": "[{'_id': '675065567473f11069e7e4d3', 'email': 'dgjhdjg5h46fg45j654j5hj65dfgdssdh@pookie.com', 'phone': '5555', 'nickname': 'Arty', 'email_code': 554934}]"
+  },
+  {
+    "id": 29,
+    "datetime": "2024-12-04 20:35:04.334374",
+    "class_name": "EmailHandler",
+    "func_name": "_create_verification_message",
+    "func_input": "375389",
+    "func_output": "True"
+  },
+  {
+    "id": 30,
+    "datetime": "2024-12-04 20:35:05.579299",
+    "class_name": "EmailHandler",
+    "func_name": "_send_email",
+    "func_input": "('dgjhdjg5h46fg45j654j5hj65dfgdssdh@pookie.com', 'Your Verification Code')",
+    "func_output": "True"
+  },
+  {
+    "id": 31,
+    "datetime": "2024-12-04 20:35:05.607307",
+    "class_name": "EmailHandler",
+    "func_name": "send_verification_email",
+    "func_input": "('dgjhdjg5h46fg45j654j5hj65dfgdssdh@pookie.com', 375389)",
+    "func_output": "True"
+  },
+  {
+    "id": 32,
+    "datetime": "2024-12-04 20:35:05.670287",
+    "class_name": "Users",
+    "func_name": "update",
+    "func_input": "('675065567473f11069e7e4d3', {375389, 'email_code'})",
+    "func_output": "cannot encode object: {375389, 'email_code'}, of type: <class 'set'>"
+  },
+  {
+    "id": 33,
+    "datetime": "2024-12-04 20:35:05.691291",
+    "class_name": "LoginHandler",
+    "func_name": "login",
+    "func_input": "('dgjhdjg5h46fg45j654j5hj65dfgdssdh@pookie.com', '5555')",
+    "func_output": "internal_err"
+  },
+  {
+    "id": 34,
+    "datetime": "2024-12-04 20:35:52.309170",
+    "class_name": "Users",
+    "func_name": "get_obj_by_filter",
+    "func_input": "{'email': 'dgjhdjg5h46fg45j654j5hj65dfgdssdh@pookie.com', 'phone': '5555'}",
+    "func_output": "[{'_id': '675065567473f11069e7e4d3', 'email': 'dgjhdjg5h46fg45j654j5hj65dfgdssdh@pookie.com', 'phone': '5555', 'nickname': 'Arty', 'email_code': 554934}]"
+  },
+  {
+    "id": 35,
+    "datetime": "2024-12-04 20:35:52.333172",
+    "class_name": "EmailHandler",
+    "func_name": "_create_verification_message",
+    "func_input": "420248",
+    "func_output": "True"
+  },
+  {
+    "id": 36,
+    "datetime": "2024-12-04 20:35:53.538899",
+    "class_name": "EmailHandler",
+    "func_name": "_send_email",
+    "func_input": "('dgjhdjg5h46fg45j654j5hj65dfgdssdh@pookie.com', 'Your Verification Code')",
+    "func_output": "True"
+  },
+  {
+    "id": 37,
+    "datetime": "2024-12-04 20:35:53.560917",
+    "class_name": "EmailHandler",
+    "func_name": "send_verification_email",
+    "func_input": "('dgjhdjg5h46fg45j654j5hj65dfgdssdh@pookie.com', 420248)",
+    "func_output": "True"
+  },
+  {
+    "id": 38,
+    "datetime": "2024-12-04 20:35:53.644390",
+    "class_name": "Users",
+    "func_name": "update",
+    "func_input": "('675065567473f11069e7e4d3', {'email_code': 420248})",
+    "func_output": "True"
+  },
+  {
+    "id": 39,
+    "datetime": "2024-12-04 20:35:53.672394",
+    "class_name": "LoginHandler",
+    "func_name": "login",
+    "func_input": "('dgjhdjg5h46fg45j654j5hj65dfgdssdh@pookie.com', '5555')",
+    "func_output": "True"
+  },
+  {
+    "id": 40,
+    "datetime": "2024-12-04 20:36:36.258458",
+    "class_name": "Users",
+    "func_name": "get_obj_by_filter",
+    "func_input": "{'email': 'miriamsh888@gmail.com', 'phone': '0542565362'}",
+    "func_output": "[{'_id': '67505e920f8a2f4820c299c4', 'email': 'miriamsh888@gmail.com', 'phone': '0542565362', 'nickname': 'Mir', 'email_code': 326956}]"
+  },
+  {
+    "id": 41,
+    "datetime": "2024-12-04 20:36:36.282839",
+    "class_name": "EmailHandler",
+    "func_name": "_create_verification_message",
+    "func_input": "697737",
+    "func_output": "True"
+  },
+  {
+    "id": 42,
+    "datetime": "2024-12-04 20:36:37.455831",
+    "class_name": "EmailHandler",
+    "func_name": "_send_email",
+    "func_input": "('miriamsh888@gmail.com', 'Your Verification Code')",
+    "func_output": "True"
+  },
+  {
+    "id": 43,
+    "datetime": "2024-12-04 20:36:37.487832",
+    "class_name": "EmailHandler",
+    "func_name": "send_verification_email",
+    "func_input": "('miriamsh888@gmail.com', 697737)",
+    "func_output": "True"
+  },
+  {
+    "id": 44,
+    "datetime": "2024-12-04 20:36:37.543835",
+    "class_name": "Users",
+    "func_name": "update",
+    "func_input": "('67505e920f8a2f4820c299c4', {'email_code': 697737})",
+    "func_output": "True"
+  },
+  {
+    "id": 45,
+    "datetime": "2024-12-04 20:36:37.568833",
+    "class_name": "LoginHandler",
+    "func_name": "login",
+    "func_input": "('miriamsh888@gmail.com', '0542565362')",
+    "func_output": "True"
+  },
+  {
+    "id": 46,
+    "datetime": "2024-12-05 23:42:18.756033",
+    "class_name": "Users",
+    "func_name": "get_obj_by_filter",
+    "func_input": "{'email': 'miriamsh888@gmail.com', 'phone': '0542565362'}",
+    "func_output": "[{'_id': '67505e920f8a2f4820c299c4', 'email': 'miriamsh888@gmail.com', 'phone': '0542565362', 'nickname': 'Mir', 'email_code': 697737}]"
+  },
+  {
+    "id": 47,
+    "datetime": "2024-12-05 23:42:18.775030",
+    "class_name": "LoginHandler",
+    "func_name": "confirm_login",
+    "func_input": "('miriamsh888@gmail.com', '0542565362')",
+    "func_output": "wrong verification code"
+  },
+  {
+    "id": 48,
+    "datetime": "2024-12-05 23:43:37.011790",
+    "class_name": "Users",
+    "func_name": "get_obj_by_filter",
+    "func_input": "{'email': 'miriamsh888@gmail.com', 'phone': '0542565362'}",
+    "func_output": "[{'_id': '67505e920f8a2f4820c299c4', 'email': 'miriamsh888@gmail.com', 'phone': '0542565362', 'nickname': 'Mir', 'email_code': 697737}]"
+  },
+  {
+    "id": 49,
+    "datetime": "2024-12-05 23:43:37.039789",
+    "class_name": "LoginHandler",
+    "func_name": "confirm_login",
+    "func_input": "('miriamsh888@gmail.com', '0542565362')",
+    "func_output": "wrong verification code"
+  },
+  {
+    "id": 50,
+    "datetime": "2024-12-05 23:44:07.328474",
+    "class_name": "Users",
+    "func_name": "get_obj_by_filter",
+    "func_input": "{'email': 'miriamsh888@gmail.com', 'phone': '0542565362'}",
+    "func_output": "[{'_id': '67505e920f8a2f4820c299c4', 'email': 'miriamsh888@gmail.com', 'phone': '0542565362', 'nickname': 'Mir', 'email_code': 697737}]"
+  },
+  {
+    "id": 51,
+    "datetime": "2024-12-05 23:44:07.346483",
+    "class_name": "LoginHandler",
+    "func_name": "confirm_login",
+    "func_input": "('miriamsh888@gmail.com', '0542565362')",
+    "func_output": "'token'"
+  },
+  {
+    "id": 52,
+    "datetime": "2024-12-05 23:49:34.913005",
+    "class_name": "Users",
+    "func_name": "get_obj_by_filter",
+    "func_input": "{'email': 'miriamsh888@gmail.com', 'phone': '0542565362'}",
+    "func_output": "[{'_id': '67505e920f8a2f4820c299c4', 'email': 'miriamsh888@gmail.com', 'phone': '0542565362', 'nickname': 'Mir', 'email_code': 697737}]"
+  },
+  {
+    "id": 53,
+    "datetime": "2024-12-05 23:49:34.935012",
+    "class_name": "LoginHandler",
+    "func_name": "confirm_login",
+    "func_input": "('miriamsh888@gmail.com', '0542565362')",
+    "func_output": "'token'"
+  },
+  {
+    "id": 54,
+    "datetime": "2024-12-05 23:54:28.538094",
+    "class_name": "Users",
+    "func_name": "get_obj_by_filter",
+    "func_input": "{'email': 'miriamsh888@gmail.com', 'phone': '0542565362'}",
+    "func_output": "[{'_id': '67505e920f8a2f4820c299c4', 'email': 'miriamsh888@gmail.com', 'phone': '0542565362', 'nickname': 'Mir', 'email_code': 697737}]"
+  },
+  {
+    "id": 55,
+    "datetime": "2024-12-05 23:54:28.559303",
+    "class_name": "Token",
+    "func_name": "generate_token",
+    "func_input": "67505e920f8a2f4820c299c4",
+    "func_output": "module 'jwt' has no attribute 'encode'"
+  },
+  {
+    "id": 56,
+    "datetime": "2024-12-05 23:54:28.582310",
+    "class_name": "LoginHandler",
+    "func_name": "confirm_login",
+    "func_input": "('miriamsh888@gmail.com', '0542565362')",
+    "func_output": "internal_err"
+  },
+  {
+    "id": 57,
+    "datetime": "2024-12-05 23:55:11.374388",
+    "class_name": "Users",
+    "func_name": "get_obj_by_filter",
+    "func_input": "{'email': 'miriamsh888@gmail.com', 'phone': '0542565362'}",
+    "func_output": "[{'_id': '67505e920f8a2f4820c299c4', 'email': 'miriamsh888@gmail.com', 'phone': '0542565362', 'nickname': 'Mir', 'email_code': 697737}]"
+  },
+  {
+    "id": 58,
+    "datetime": "2024-12-05 23:55:11.393389",
+    "class_name": "Token",
+    "func_name": "generate_token",
+    "func_input": "67505e920f8a2f4820c299c4",
+    "func_output": "module 'jwt' has no attribute 'encode'"
+  },
+  {
+    "id": 59,
+    "datetime": "2024-12-05 23:55:11.411399",
+    "class_name": "LoginHandler",
+    "func_name": "confirm_login",
+    "func_input": "('miriamsh888@gmail.com', '0542565362')",
+    "func_output": "internal_err"
+  },
+  {
+    "id": 60,
+    "datetime": "2024-12-05 23:58:54.539243",
+    "class_name": "Users",
+    "func_name": "get_obj_by_filter",
+    "func_input": "{'email': 'miriamsh888@gmail.com', 'phone': '0542565362'}",
+    "func_output": "[{'_id': '67505e920f8a2f4820c299c4', 'email': 'miriamsh888@gmail.com', 'phone': '0542565362', 'nickname': 'Mir', 'email_code': 697737}]"
+  },
+  {
+    "id": 61,
+    "datetime": "2024-12-05 23:58:54.564243",
+    "class_name": "Token",
+    "func_name": "generate_token",
+    "func_input": "67505e920f8a2f4820c299c4",
+    "func_output": "Object of type datetime is not JSON serializable"
+  },
+  {
+    "id": 62,
+    "datetime": "2024-12-05 23:58:54.583244",
+    "class_name": "LoginHandler",
+    "func_name": "confirm_login",
+    "func_input": "('miriamsh888@gmail.com', '0542565362')",
+    "func_output": "internal_err"
+  },
+  {
+    "id": 63,
+    "datetime": "2024-12-05 23:59:59.229678",
+    "class_name": "Users",
+    "func_name": "get_obj_by_filter",
+    "func_input": "{'email': 'miriamsh888@gmail.com', 'phone': '0542565362'}",
+    "func_output": "[{'_id': '67505e920f8a2f4820c299c4', 'email': 'miriamsh888@gmail.com', 'phone': '0542565362', 'nickname': 'Mir', 'email_code': 697737}]"
+  },
+  {
+    "id": 64,
+    "datetime": "2024-12-05 23:59:59.305679",
+    "class_name": "Users",
+    "func_name": "update",
+    "func_input": "('67505e920f8a2f4820c299c4', {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDVUMjM6NTk6NTkuMjM1Njc2In0.q787klcY5XhXTWSll32h1ztzp-Z2k9xqAJO5lYDZvbg'})",
+    "func_output": "True"
+  },
+  {
+    "id": 65,
+    "datetime": "2024-12-05 23:59:59.327678",
+    "class_name": "Token",
+    "func_name": "generate_token",
+    "func_input": "67505e920f8a2f4820c299c4",
+    "func_output": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDVUMjM6NTk6NTkuMjM1Njc2In0.q787klcY5XhXTWSll32h1ztzp-Z2k9xqAJO5lYDZvbg"
+  },
+  {
+    "id": 66,
+    "datetime": "2024-12-05 23:59:59.348683",
+    "class_name": "LoginHandler",
+    "func_name": "confirm_login",
+    "func_input": "('miriamsh888@gmail.com', '0542565362')",
+    "func_output": "True"
+  },
+  {
+    "id": 67,
+    "datetime": "2024-12-06 00:02:52.716390",
+    "class_name": "Authenticator",
+    "func_name": "_decode_token",
+    "func_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDVUMjM6NTk6NTkuMjM1Njc2In0.q787klcY5XhXTWSll32h1ztzp-Z2k9xqAJO5lYDZvbg",
+    "func_output": "{'user_id': '67505e920f8a2f4820c299c4', 'created': '2024-12-05T23:59:59.235676'}"
+  },
+  {
+    "id": 68,
+    "datetime": "2024-12-06 00:02:52.736383",
+    "class_name": "Authenticator",
+    "func_name": "authenticate_client",
+    "func_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDVUMjM6NTk6NTkuMjM1Njc2In0.q787klcY5XhXTWSll32h1ztzp-Z2k9xqAJO5lYDZvbg",
+    "func_output": "67505e920f8a2f4820c299c4"
+  },
+  {
+    "id": 69,
+    "datetime": "2024-12-06 00:02:52.808667",
+    "class_name": "Users",
+    "func_name": "delete_fields",
+    "func_input": "('67505e920f8a2f4820c299c4', ['token'])",
+    "func_output": "True"
+  },
+  {
+    "id": 70,
+    "datetime": "2024-12-06 00:02:52.827662",
+    "class_name": "LoginToken",
+    "func_name": "delete_token",
+    "func_input": "67505e920f8a2f4820c299c4",
+    "func_output": "True"
+  },
+  {
+    "id": 71,
+    "datetime": "2024-12-06 00:02:52.850665",
+    "class_name": "LoginHandler",
+    "func_name": "logout",
+    "func_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDVUMjM6NTk6NTkuMjM1Njc2In0.q787klcY5XhXTWSll32h1ztzp-Z2k9xqAJO5lYDZvbg",
+    "func_output": "True"
+  },
+  {
+    "id": 72,
+    "datetime": "2024-12-06 02:05:01.766108",
+    "class_name": "Users",
+    "func_name": "get_obj_by_filter",
+    "func_input": "{'email': 'miriamsh888@gmail.com', 'phone': '0542565362'}",
+    "func_output": "[{'_id': '67505e920f8a2f4820c299c4', 'email': 'miriamsh888@gmail.com', 'phone': '0542565362', 'nickname': 'Mir', 'email_code': 697737}]"
+  },
+  {
+    "id": 73,
+    "datetime": "2024-12-06 02:05:01.778106",
+    "class_name": "LoginHandler",
+    "func_name": "confirm_login",
+    "func_input": "('miriamsh888@gmail.com', '0542565362')",
+    "func_output": "wrong verification code"
+  },
+  {
+    "id": 74,
+    "datetime": "2024-12-06 02:05:18.759878",
+    "class_name": "Users",
+    "func_name": "get_obj_by_filter",
+    "func_input": "{'email': 'miriamsh888@gmail.com', 'phone': '0542565362'}",
+    "func_output": "[{'_id': '67505e920f8a2f4820c299c4', 'email': 'miriamsh888@gmail.com', 'phone': '0542565362', 'nickname': 'Mir', 'email_code': 697737}]"
+  },
+  {
+    "id": 75,
+    "datetime": "2024-12-06 02:05:18.821900",
+    "class_name": "Users",
+    "func_name": "update",
+    "func_input": "('67505e920f8a2f4820c299c4', {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6MDU6MTguNzYyODc3In0.IE4-B6lGA3ypW1KSC2XUPn9STfnwsl6Enfw_wJK_JB0'})",
+    "func_output": "True"
+  },
+  {
+    "id": 76,
+    "datetime": "2024-12-06 02:05:18.833895",
+    "class_name": "Token",
+    "func_name": "generate_token",
+    "func_input": "67505e920f8a2f4820c299c4",
+    "func_output": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6MDU6MTguNzYyODc3In0.IE4-B6lGA3ypW1KSC2XUPn9STfnwsl6Enfw_wJK_JB0"
+  },
+  {
+    "id": 77,
+    "datetime": "2024-12-06 02:05:18.859387",
+    "class_name": "Users",
+    "func_name": "delete_fields",
+    "func_input": "('67505e920f8a2f4820c299c4', ['email_code'])",
+    "func_output": "True"
+  },
+  {
+    "id": 78,
+    "datetime": "2024-12-06 02:05:18.871420",
+    "class_name": "LoginHandler",
+    "func_name": "confirm_login",
+    "func_input": "('miriamsh888@gmail.com', '0542565362')",
+    "func_output": "True"
+  },
+  {
+    "id": 79,
+    "datetime": "2024-12-06 02:05:50.271651",
+    "class_name": "Authenticator",
+    "func_name": "_decode_token",
+    "func_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6MDU6MTguNzYyODc3In0.IE4-B6lGA3ypW1KSC2XUPn9STfnwsl6Enfw_wJK_JB0",
+    "func_output": "{'user_id': '67505e920f8a2f4820c299c4', 'created': '2024-12-06T02:05:18.762877'}"
+  },
+  {
+    "id": 80,
+    "datetime": "2024-12-06 02:05:50.283658",
+    "class_name": "Authenticator",
+    "func_name": "authenticate_client",
+    "func_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6MDU6MTguNzYyODc3In0.IE4-B6lGA3ypW1KSC2XUPn9STfnwsl6Enfw_wJK_JB0",
+    "func_output": "67505e920f8a2f4820c299c4"
+  },
+  {
+    "id": 81,
+    "datetime": "2024-12-06 02:05:50.318659",
+    "class_name": "Users",
+    "func_name": "delete_fields",
+    "func_input": "('67505e920f8a2f4820c299c4', ['token'])",
+    "func_output": "True"
+  },
+  {
+    "id": 82,
+    "datetime": "2024-12-06 02:05:50.330648",
+    "class_name": "LoginToken",
+    "func_name": "delete_token",
+    "func_input": "67505e920f8a2f4820c299c4",
+    "func_output": "True"
+  },
+  {
+    "id": 83,
+    "datetime": "2024-12-06 02:05:50.342651",
+    "class_name": "LoginHandler",
+    "func_name": "logout",
+    "func_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6MDU6MTguNzYyODc3In0.IE4-B6lGA3ypW1KSC2XUPn9STfnwsl6Enfw_wJK_JB0",
+    "func_output": "True"
+  }
+]

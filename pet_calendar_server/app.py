@@ -19,7 +19,7 @@ if __name__ == '__main__':
         from db_handler.users import Users
         from bussnies_logic.login_handler import LoginHandler
         login = LoginHandler()
-        signup = login.sign_up('dgjhdjg5h46fg45j654j5hj65dfgdssdh@pookie.com','5555','Arty')
+        signup = login.logout('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6MDU6MTguNzYyODc3In0.IE4-B6lGA3ypW1KSC2XUPn9STfnwsl6Enfw_wJK_JB0')
         print(signup)
         
     app.run(debug=app.config['DEBUG'], use_reloader=app.config['USE_RELOADER'], port=5000, host='0.0.0.0')

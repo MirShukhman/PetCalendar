@@ -20,7 +20,7 @@ class Token:
         Output: token (str) / False
         """
         try:
-            now = datetime.now()
+            now = datetime.now().isoformat()  
             token = jwt.encode(
                 {'user_id': user_id,
                 'created': now},
