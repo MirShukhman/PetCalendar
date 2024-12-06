@@ -29,7 +29,7 @@ class LoginHandler:
             existining_user = Users.get_obj_by_filter({'email': email, 'phone': phone})
             if existining_user:
                 output = 'user with credentials exists'
-                return {'user_err': output}
+                return False, {'user_err': output}
             
             code = self._generate_random_code()
             send_email = self.email.send_verification_email(email,code)
@@ -70,7 +70,7 @@ class LoginHandler:
                 code = self._generate_random_code()
                 send_email = self.email.send_verification_email(email,code)
                 if send_email:
-                    user_id = existining_user[0]['_id']
+                    user_id = existining_user[0].get('_id')
                     save_code = Users.update(user_id,{'email_code': code})
                     if save_code:
                         output = True

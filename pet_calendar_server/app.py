@@ -18,9 +18,17 @@ if __name__ == '__main__':
     with app.app_context():
         from db_handler.users import Users
         from bussnies_logic.login_handler import LoginHandler
+        from bussnies_logic.user_data_handler import UserDataHandler
+        from bussnies_logic.pet_data_handler import PetDataHandler
+        user = UserDataHandler()
         login = LoginHandler()
-        signup = login.logout('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6MDU6MTguNzYyODc3In0.IE4-B6lGA3ypW1KSC2XUPn9STfnwsl6Enfw_wJK_JB0')
-        print(signup)
+        pets = PetDataHandler()
+        l = pets.delete_pet('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDY1MGFjMjBmY2U4N2Y0NzIxZDU3IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMTk6NDM6MzUuMDMxMjUzIn0.Ui10dx6zXisnWUhz4Ywyisc2PlGGfw4AZpxUXXrzTYI',
+                      '675344cbdc4fcc2955656898')
+        #l = pets.add_pet('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDY1MGFjMjBmY2U4N2Y0NzIxZDU3IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMTk6NDM6MzUuMDMxMjUzIn0.Ui10dx6zXisnWUhz4Ywyisc2PlGGfw4AZpxUXXrzTYI',
+        #                {'name':'gogo'})
+        print(l)
+        #token = login.confirm_login('miriamsh888@gmail.com','0542565362','697868')
         
     app.run(debug=app.config['DEBUG'], use_reloader=app.config['USE_RELOADER'], port=5000, host='0.0.0.0')
     

@@ -149,7 +149,7 @@ class BaseModel():
         try:
             collection = cls.access_collection()
             new = collection.insert_one(new_data_dict)
-            output = new.inserted_id if new and new.inserted_id else False
+            output = str(new.inserted_id) if new and new.inserted_id else False
             return output
         
         except Exception as e:
