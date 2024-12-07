@@ -23,12 +23,10 @@ if __name__ == '__main__':
         user = UserDataHandler()
         login = LoginHandler()
         pets = PetDataHandler()
-        l = pets.delete_pet('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDY1MGFjMjBmY2U4N2Y0NzIxZDU3IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMTk6NDM6MzUuMDMxMjUzIn0.Ui10dx6zXisnWUhz4Ywyisc2PlGGfw4AZpxUXXrzTYI',
-                      '675344cbdc4fcc2955656898')
-        #l = pets.add_pet('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDY1MGFjMjBmY2U4N2Y0NzIxZDU3IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMTk6NDM6MzUuMDMxMjUzIn0.Ui10dx6zXisnWUhz4Ywyisc2PlGGfw4AZpxUXXrzTYI',
-        #                {'name':'gogo'})
+        l = pets.update_pet('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDY1MGFjMjBmY2U4N2Y0NzIxZDU3IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMTk6NDM6MzUuMDMxMjUzIn0.Ui10dx6zXisnWUhz4Ywyisc2PlGGfw4AZpxUXXrzTYI',
+                            '6753377376e41d84018cf088',
+                            {'name':'frogo','colour':'brown poo'})
         print(l)
-        #token = login.confirm_login('miriamsh888@gmail.com','0542565362','697868')
         
     app.run(debug=app.config['DEBUG'], use_reloader=app.config['USE_RELOADER'], port=5000, host='0.0.0.0')
     

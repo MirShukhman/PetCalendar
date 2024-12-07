@@ -11,8 +11,73 @@ class PetDataHandler:
         self.token = Token()
         self.authenticator = Authenticator()
     
-    # pull all pet data of the user (restore backup)
     # update specific pets data 
+    
+    def pull_all_pets_data(self, token):
+        '''
+        07.12.24
+        Mir
+        Pull all of user's pets' data - restore backup for frontend
+        Input: token (str)
+        Output: List of dicts / Empty List / False
+        '''
+        try:
+            user_id = self.authenticator.authenticate_client(token)
+            if user_id:
+                all_user_pets_ids = Users.get_fields_by_id(user_id,['pets'])
+                if all_user_pets_ids:
+                    all_user_pets_ids_list = all_user_pets_ids.get('pets')
+                    users_pets_data = []
+                    for pet in all_user_pets_ids_list:
+                        pet_data = Pets.get_obj_by_id(pet)
+                        users_pets_data.append(pet_data)
+                    
+                    output = users_pets_data
+                    return users_pets_data  
+                    
+                else: 
+                    output = []
+                    return []
+                
+            else:
+                output = False
+                return False
+        
+        except Exception as e:
+            output = str(e)
+            return False
+            
+        finally:
+            logger.log('PetDataHandler','pull_all_pets_data',token, output)
+    
+    
+    def update_pet(self, token, pet_id, new_pet_data_dict):
+        '''
+        07.12.24
+        Mir
+        Input: token (str), pet_id (str), new_pet_data_dict (dict)
+        Output: True / False
+        '''
+        try:
+            user_id = self.authenticator.authenticate_client(token)
+            if user_id:
+                pet = Pets.get_obj_by_id(pet_id)
+                if pet.get('user_id') == user_id:
+                    update_pet = Pets.update(pet_id, new_pet_data_dict)
+                    output = True if update_pet else False
+                    return output
+                    
+            else:
+                output = False
+                return False
+        
+        except Exception as e:
+            output = str(e)
+            return False
+            
+        finally:
+            logger.log('PetDataHandler','update_pet',(token, pet_id, new_pet_data_dict), output)    
+            
 
     def add_pet(self,token,pet_data_dict):
         '''

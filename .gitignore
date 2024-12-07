@@ -1,2 +1,2 @@
 *.env
-pet_calendar_server\log\log.json
+pet_calendar_server/log/log.json
