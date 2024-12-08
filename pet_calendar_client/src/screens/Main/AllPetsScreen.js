@@ -1,32 +1,66 @@
-import React, { useState, useContext } from 'react';
-import { View, Text, Button, StyleSheet } from 'react-native';
+import React, { useState, useContext, useEffect } from 'react';
+import { FlatList, View, Text, Button, StyleSheet } from 'react-native';
 import MainScreensWrapper from '../../components/MainScreensWrapper';
-
+import { useSelector, useDispatch } from 'react-redux';
+import { fetchPets, addPet, deletePet } from '../../store/actions/petsActions';
 
 const AllPetsScreen = ({ navigation }) => {
+
+    const dispatch = useDispatch();
+    const pets = useSelector(state => state.pets);
+    useEffect(() => {
+        dispatch(fetchPets());
+    }, [dispatch]);
+
+    const handleAddPet = () => {
+        const newPet = { type: 'Dog', name: 'Nairobi', age: 4, color: 'brown', demeanor: 'couch-friendly'};
+        dispatch(addPet(newPet));
+    }
+
+    const handleDeletePet = (id) => {
+      dispatch(deletePet(id));
+    }
 
     const openAddPetScreen = () => {
         navigation.navigate('SecondaryStack', {
             screen: 'AddPet',
         });
     };
-
-    return(
-        <MainScreensWrapper title="All Pets"> 
-            <Text>Here be all pets in the whole world ever!</Text>
-            <Button title="Add Pet" onPress={openAddPetScreen}/>
-        </MainScreensWrapper>
+    console.log('Pets data:', pets);
+    return (
+      <MainScreensWrapper title="All Pets" style={{ flex: 1 }}>
+        <Button title="Add Pet" onPress={openAddPetScreen} />
+        <View style={styles.petsList}>
+          <FlatList
+            data={pets}
+            keyExtractor={(item) => item.id.toString()}
+            renderItem={({ item }) => (
+              <View style={styles.petBox}>
+                <Text>ID: {item.id ?? '-1'}</Text>
+                <Text>Type: {item.type ?? 'none'}</Text>
+                <Text>Name: {item.name ?? 'none'}</Text>
+                <Text>Age: {item.age ?? 'none'}</Text>
+                <Text>Color: {item.color ?? 'none'}</Text>
+                <Text>Demeanor: {item.demeanor ?? 'none'}</Text>
+                <Button title="del" onPress={() => handleDeletePet(item.id)}/>
+              </View>
+            )}
+          />
+        </View>
+      </MainScreensWrapper>
     );
 };
 
 
 const styles = StyleSheet.create({
-    placeholderStyle:{
+    petsList:{
       flex:1,
-      flexDirection:'column',
-      alignItems:'center',
-      borderColor:'#00000000',
-      borderWidth:1,
+
+    },
+    petBox:{
+      padding:10,
+      borderBottomWidth:1,
+
     },
   });
 

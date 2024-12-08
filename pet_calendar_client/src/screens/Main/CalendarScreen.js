@@ -3,7 +3,7 @@ import { View, Text, StyleSheet } from 'react-native';
 import { Calendar } from 'react-native-calendars';
 import { useFocusEffect } from '@react-navigation/native';
 import MainScreensWrapper from '../../components/MainScreensWrapper';
-import { TouchableOpacity } from 'react-native';
+import { Pressable } from 'react-native';
 
 const CalendarScreen = () => {
   const [calendarKey, setCalendarKey] = useState(0);
@@ -65,17 +65,20 @@ useFocusEffect(React.useCallback(() => {
                 };
               
                 return (
-                  <TouchableOpacity
+                  <Pressable
                     onPress={handlePress}
-                    style={{
-                      width: 58,
-                      borderWidth: 3,
-                      borderColor: '#808040',
-                      padding: 10,
-                      margin: -8,
-                      backgroundColor: isSelected ? '#a0f070' : '#f0f070',
-                      alignItems: 'center',
-                    }}
+                    style={({ pressed }) => [
+                      {
+                        width: 58,
+                        borderWidth: 3,
+                        borderColor: '#808040',
+                        padding: 10,
+                        margin: -8,
+                        backgroundColor: isSelected ? '#a0f070' : '#f0f070',
+                        alignItems: 'center',
+                        opacity: pressed ? 0.8 : 1, 
+                      },
+                    ]}
                   >
                     <Text style={{ textAlign: 'center', color: isDisabled ? 'gray' : 'black' }}>
                       {date.day}
@@ -92,7 +95,7 @@ useFocusEffect(React.useCallback(() => {
                         }}
                       />
                     )}
-                  </TouchableOpacity>
+                  </Pressable>
                 );
               }}
             />
