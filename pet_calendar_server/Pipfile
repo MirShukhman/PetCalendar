@@ -12,6 +12,7 @@ jwt = "*"
 validate-email-address = "*"
 dnspython = "*"
 pyjwt = "*"
+flask-cors = "*"
 
 [dev-packages]
 

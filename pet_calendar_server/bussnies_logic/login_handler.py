@@ -29,7 +29,7 @@ class LoginHandler:
             existining_user = Users.get_obj_by_filter({'email': email, 'phone': phone})
             if existining_user:
                 output = 'user with credentials exists'
-                return False, {'user_err': output}
+                return False, {'user_err': output}, 400
             
             code = self._generate_random_code()
             send_email = self.email.send_verification_email(email,code)
@@ -37,20 +37,20 @@ class LoginHandler:
                 create_user = Users.add({'email': email, 'phone': phone, 'nickname': nickname, 'email_code': code})
                 if create_user:
                     output = True
-                    return True, True
+                    return True, True, None
                 
                 else:
                     output = 'internal_err'
-                    return False, {'internal_err': output}
+                    return False, {'internal_err': output}, 500
             
             else:
                 output = 'invalid email adress'
-                return False, {'user_err': output}
+                return False, {'user_err': output}, 401
 
             
         except Exception as e:
             output = str(e)
-            return False, {'internal_err': output}
+            return False, {'internal_err': output}, 500
             
         finally:
             logger.log('LoginHandler','sign_up',(email, phone, nickname), output)
@@ -74,19 +74,19 @@ class LoginHandler:
                     save_code = Users.update(user_id,{'email_code': code})
                     if save_code:
                         output = True
-                        return True, True
+                        return True, True, None
                 
                     else:
                         output = 'internal_err'
-                        return False, {'internal_err': output}
+                        return False, {'internal_err': output}, 500
                          
             else:
                 output = 'invalid credantials'
-                return False, {'user_err': output}
+                return False, {'user_err': output}, 401
              
         except Exception as e:
             output = str(e)
-            return False, {'internal_err': output}
+            return False, {'internal_err': output}, 500
             
         finally:
             logger.log('LoginHandler','login',(email, phone), output)
@@ -111,7 +111,7 @@ class LoginHandler:
                     if existining_user[0].get('token'):
                         delete_code = Users.delete_fields(user_id, ['email_code'])
                         output = True
-                        return True, {'token':existining_user[0]['token']}
+                        return True, {'token':existining_user[0]['token']}, None
                     
                     else:
                         user_id = existining_user[0]['_id']
@@ -120,23 +120,23 @@ class LoginHandler:
                         if token:
                             delete_code = Users.delete_fields(user_id, ['email_code'])
                             output = True
-                            return True, {'token':token}
+                            return True, {'token':token}, None
                         
                         else:
                             output = 'internal_err'
-                            return False, {'internal_err': output}
+                            return False, {'internal_err': output}, 500
                             
                 else:
                     output = 'wrong verification code'
-                    return False, {'user_err': output}  
+                    return False, {'user_err': output}, 401
                 
             else:
                 output = 'invalid credantials'
-                return False, {'user_err': output}
+                return False, {'user_err': output}, 401
              
         except Exception as e:
             output = str(e)
-            return False, {'internal_err': output}
+            return False, {'internal_err': output}, 500
             
         finally:
             logger.log('LoginHandler','confirm_login',(email, phone), output)

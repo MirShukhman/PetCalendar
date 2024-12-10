@@ -10,9 +10,7 @@ class PetDataHandler:
     def __init__(self):
         self.token = Token()
         self.authenticator = Authenticator()
-    
-    # update specific pets data 
-    
+        
     def pull_all_pets_data(self, token):
         '''
         07.12.24
