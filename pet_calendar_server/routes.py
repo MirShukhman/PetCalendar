@@ -21,6 +21,11 @@ class Routes(Blueprint):
         self.route('/edit_uder_data', methods=['PUT'])(self.edit_uder_data)
         self.route('/delete_user', methods=['DELETE'])(self.delete_user)
         
+        self.route('/restore_pet_data', methods=['GET'])(self.restore_pet_data)
+        self.route('/add_pet', methods=['POST'])(self.add_pet)
+        self.route('/update_pet/<string:pet_id>', methods=['PUT'])(self.update_pet)
+        self.route('/delete_pet/<string:pet_id>', methods=['DELETE'])(self.delete_pet)
+        
         
     def login(self):
         '''
@@ -200,7 +205,7 @@ class Routes(Blueprint):
                     {"email":"email_str",
                     "phone": "phone_str",
                     "nickname": "nickname"}
-        Output: json, {' ':True} + 201 / {'err_type': 'err_msg'} + 400/500/403
+        Output: json, {'edit_user':True} + 201 / {'err_type': 'err_msg'} + 400/500/403
         '''
         try:
             token = request.headers.get('Authorization')
@@ -267,3 +272,143 @@ class Routes(Blueprint):
         
         finally:
             logger.log('Routes','delete_user',token if token else 'no data',output)
+            
+            
+    def restore_pet_data(self):
+        '''
+        13.12.24
+        Mir
+        Input: 
+            Header: json, {"Authorization" : "token_str}
+            Body: None
+        Output: json, {'pet_data':[list, empty or dicts]} + 200 / {'err_type': 'err_msg'} + 400/500
+        '''
+        try:
+            token = request.headers.get('Authorization')
+            if not token:
+                output = {'user_err': 'Incomplete or no data provided'}
+                return jsonify(output), 400
+            
+            pet_data = self.pet_handler.pull_all_pets_data(token)
+            if isinstance(pet_data, list):
+                output = pet_data
+                return jsonify({'pet_data': pet_data}), 200
+            else:
+                output = {'internal_err': 'Unknown error occurred'}
+                return jsonify(output), 500
+            
+        except Exception as e:
+            output = str(e)
+            return jsonify({'internal_err':str(e)}), 500
+        
+        finally:
+            logger.log('Routes','restore_pet_data',token if token else 'no data',output)
+            
+            
+    def add_pet(self):
+        '''
+        13.12.24
+        Mir
+        Input: 
+            Header: json, {"Authorization" : "token_str}
+            Body: json, 
+                    {"pet_data":{dict of pet data}}
+        Output: json, {'new_pet':True} + 201 / {'err_type': 'err_msg'} + 400/500
+        '''
+        try:
+            token = request.headers.get('Authorization')
+            data = request.json
+            if not token or not data:
+                output = {'user_err': 'Incomplete or no data provided'}
+                return jsonify(output), 400
+            
+            pet_data = data.get('pet_data')
+            if not pet_data:
+                output = {'user_err': 'Incomplete or no data provided'}
+                return jsonify(output), 400
+            
+            new_pet = self.pet_handler.add_pet(token,pet_data)
+            output = new_pet
+            if new_pet:
+                return jsonify({'new_pet': True}), 201
+            else:
+                return jsonify({'internal_err': 'Unknown error occurred'}), 500
+        
+        except Exception as e:
+            output = str(e)
+            return jsonify({'internal_err':str(e)}), 500
+        
+        finally:
+            logger.log('Routes','add_pet',(token, data if token and data else 'no data'),output)
+            
+
+    def update_pet(self, pet_id):
+        '''
+        13.12.24
+        Mir
+        Input: 
+            Route Param: string, pet_id
+            Header: json, {"Authorization" : "token_str}
+            Body: json, 
+                    {"pet_data":{dict of pet data}}
+        Output: json, {'update':True} + 201 / {'err_type': 'err_msg'} + 400/500
+        '''
+        try:
+            token = request.headers.get('Authorization')
+            data = request.json
+            if not token or not data or not pet_id:
+                output = {'user_err': 'Incomplete or no data provided'}
+                return jsonify(output), 400
+            
+            pet_data = data.get('pet_data')
+            if not pet_data:
+                output = {'user_err': 'Incomplete or no data provided'}
+                return jsonify(output), 400
+            
+            update = self.pet_handler.update_pet(token,pet_id,pet_data)
+            output = update
+            if update:
+                return jsonify({'update': True}), 201
+            else:
+                return jsonify({'internal_err': 'Unknown error occurred'}), 500
+            
+        except Exception as e:
+            output = str(e)
+            return jsonify({'internal_err':str(e)}), 500
+        
+        finally:
+            logger.log('Routes','update_pet',(token, data,pet_id if token and data and pet_id else 'no data'),output)
+            
+            
+    def delete_pet(self, pet_id):
+        '''
+        13.12.24
+        Mir
+        Input: 
+            Route Param: string, pet_id
+            Header: json, {"Authorization" : "token_str}
+            Body: None
+        Output: json, {'delete':True} + 200 / {'err_type': 'err_msg'} + 400/500
+        '''
+        try:
+            token = request.headers.get('Authorization')
+            if not token  or not pet_id:
+                output = {'user_err': 'Incomplete or no data provided'}
+                return jsonify(output), 400
+            
+            delete = self.pet_handler.delete_pet(token,pet_id)
+            output = delete
+            if delete:
+                return jsonify({'delete': True}), 200
+            else:
+                return jsonify({'internal_err': 'Unknown error occurred'}), 500
+            
+        except Exception as e:
+            output = str(e)
+            return jsonify({'internal_err':str(e)}), 500
+        
+        finally:
+            logger.log('Routes','delete_pet',(token, pet_id if token and pet_id else 'no data'),output)
+            
+
+            

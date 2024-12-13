@@ -2,6 +2,7 @@
 import jwt
 from app import create_app
 from log.logger import Logger
+from db_handler.users import Users
 
 logger = Logger()
 
@@ -20,8 +21,10 @@ class Authenticator:
             decoded_data = self._decode_token(token)
             if decoded_data:
                 user_id = decoded_data['user_id']
-                output = user_id
-                return user_id
+                user_exists = Users.get_obj_by_id(user_id)
+                if user_exists:
+                    output = user_id
+                    return user_id
             
             else:
                 output = False

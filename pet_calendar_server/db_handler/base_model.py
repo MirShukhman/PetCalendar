@@ -171,7 +171,7 @@ class BaseModel():
         try:
             collection = cls.access_collection()
             update = collection.update_one({'_id': ObjectId(id)}, {'$set':new_data_dict})
-            output =  True if update.matched_count > 0 and update.modified_count > 0 else False
+            output =  True if update.matched_count > 0  else False
             return output
         
         except Exception as e:
