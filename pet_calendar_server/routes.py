@@ -18,6 +18,9 @@ class Routes(Blueprint):
         self.route('/confirm_login', methods=['POST'])(self.confirm_login)
         self.route('/logout', methods=['DELETE'])(self.logout)
         
+        self.route('/edit_uder_data', methods=['PUT'])(self.edit_uder_data)
+        self.route('/delete_user', methods=['DELETE'])(self.delete_user)
+        
         
     def login(self):
         '''
@@ -31,7 +34,7 @@ class Routes(Blueprint):
         Output: json, {'login':True} + 201 / {'err_type': 'err_msg'} + 400/401/500
         '''
         try:
-            data= request.json
+            data = request.json
             if not data:
                 output = {'user_err': 'Incomplete or no data provided'}
                 return jsonify(output), 400
@@ -76,7 +79,7 @@ class Routes(Blueprint):
         Output: json, {'signup':True} + 201 / {'err_type': 'err_msg'} + 400/401/500
         '''
         try:
-            data= request.json
+            data = request.json
             if not data:
                 output = {'user_err': 'Incomplete or no data provided'}
                 return jsonify(output), 400
@@ -122,7 +125,7 @@ class Routes(Blueprint):
         Output: json, {'token':'token_str'} + 201 / {'err_type': 'err_msg'} + 400/401/500
         '''
         try:
-            data= request.json
+            data = request.json
             if not data:
                 output = {'user_err': 'Incomplete or no data provided'}
                 return jsonify(output), 400
@@ -165,7 +168,6 @@ class Routes(Blueprint):
         Output: json, {'logout':True} + 200 / {'err_type': 'err_msg'} + 400/500
         '''
         try:
-            print(dict(request.headers))
             token = request.headers.get('Authorization')
             if not token:
                 output = {'user_err': 'Incomplete or no data provided'}
@@ -186,3 +188,82 @@ class Routes(Blueprint):
         
         finally:
             logger.log('Routes','logout',token if token else 'no data',output)
+            
+            
+    def edit_uder_data(self):
+        '''
+        13.12.24
+        Mir
+        Input: 
+            Header: json, {"Authorization" : "token_str}
+            Body: json, 
+                    {"email":"email_str",
+                    "phone": "phone_str",
+                    "nickname": "nickname"}
+        Output: json, {' ':True} + 201 / {'err_type': 'err_msg'} + 400/500/403
+        '''
+        try:
+            token = request.headers.get('Authorization')
+            data = request.json
+            if not token or not data:
+                output = {'user_err': 'Incomplete or no data provided'}
+                return jsonify(output), 400
+            
+            email = data.get('email')
+            phone = data.get('phone')
+            nickname = data.get('nickname')
+            
+            if not email or not phone or not nickname:
+                output = {'user_err': 'Incomplete or no data provided'}
+                return jsonify(output), 400
+
+            edit_user, err , type_err = self.user_handler.edit_uder_data(token,email,phone,nickname)
+            
+            if edit_user:
+                output = True
+                return jsonify({'edit_user':True}), 201
+            elif err:
+                output = err
+                return jsonify(err), type_err
+            else:
+                output = {'internal_err': 'Unknown error occurred during confirm_login'}
+                return jsonify(output), 500
+
+        except Exception as e:
+            output = str(e)
+            return jsonify({'internal_err':str(e)}), 500
+        
+        finally:
+            logger.log('Routes','edit_uder_data',(token, data if token and data else 'no data'),output)
+            
+            
+    def delete_user(self):
+        '''
+        13.12.24
+        Mir
+        Input: 
+            Header: json, {"Authorization" : "token_str}
+            Body: None
+        Output: json, {'delete_user':True} + 200 / {'err_type': 'err_msg'} + 400/500
+        '''
+        try:
+            token = request.headers.get('Authorization')
+            if not token:
+                output = {'user_err': 'Incomplete or no data provided'}
+                return jsonify(output), 400
+
+            delete_user = self.user_handler.delete_user(token)
+            
+            if delete_user:
+                output = True
+                return jsonify({'delete_user':True}), 200
+            else:
+                output = {'internal_err': 'Unknown error occurred during delete_user'}
+                return jsonify(output), 500
+
+        except Exception as e:
+            output = str(e)
+            return jsonify({'internal_err':str(e)}), 500
+        
+        finally:
+            logger.log('Routes','delete_user',token if token else 'no data',output)

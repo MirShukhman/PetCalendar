@@ -23,7 +23,7 @@ class LoginHandler:
         Mir
         Checks that user with credentials dosent exist, creates code, emails code, creates user in db with the email_code field.
         Input: email, phone, nickname (all str)
-        Otput: True + True / False + dict of {'type_err':'err'}
+        Otput: True + True / False + dict of {'type_err':'err'} + err code
         '''
         try:
             existining_user = Users.get_obj_by_filter({'email': email, 'phone': phone})
@@ -62,7 +62,7 @@ class LoginHandler:
         Mir
         Finds user in db by email+phone, sends code by email, saves code in db.
         Input: email, phone (all str)
-        Otput: True + True / False + dict of {'type_err':'err'}
+        Otput: True + True + None/ False + dict of {'type_err':'err'} + err code
         '''
         try:
             existining_user = Users.get_obj_by_filter({'email': email, 'phone': phone})
@@ -100,7 +100,7 @@ class LoginHandler:
         checks if token exists, if yes returns existing token, if not generates token
         and returns it. 
         Input: email, phone, code (all str)
-        Otput: True + dict of {'token':'token'} / False + dict of {'type_err':'err'}
+        Otput: True + dict of {'token':'token'} + None/ False + dict of {'type_err':'err'} + err code
         '''
         try:
             existining_user = Users.get_obj_by_filter({'email': email, 'phone': phone})

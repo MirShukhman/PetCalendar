@@ -17,27 +17,27 @@ class UserDataHandler:
         06.12.24
         Mir
         Input: token, new_email, new_phone, new_nickname (all str)
-        Output: True + True / False + dict of {'type_err':'err'}
+        Output: True + True + None / False + dict of {'type_err':'err'} + err code
         '''
         try:
             user_id = self.authenticator.authenticate_client(token)
             existining_user = Users.get_obj_by_filter({'email': new_email, 'phone': new_phone})
             if existining_user and existining_user[0].get('_id') != user_id:
                 output = 'user with credentials exists'
-                return False, {'user_err': output}
+                return False, {'user_err': output}, 403
             
             update = Users.update(user_id, {'email': new_email, 'phone': new_phone, 'nickname': new_nickname})
             if update:
                 output = True
-                return True, True
+                return True, True, None
                 
             else:
                 output = 'internal_err'
-                return False, {'internal_err': output}
+                return False, {'internal_err': output}, 500
             
         except Exception as e:
             output = str(e)
-            return False, {'internal_err': output}
+            return False, {'internal_err': output}, 500
             
         finally:
             logger.log('UserDataHandler','edit_uder_data',(token, new_email, new_phone, new_nickname), output)
