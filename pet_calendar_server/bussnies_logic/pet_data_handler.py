@@ -83,7 +83,7 @@ class PetDataHandler:
         Mir
         Adds pet to Pets collection + to user's pets array field
         Input: token (str), pet_data_dict (dict)
-        Output: True / False
+        Output: new pet_id / False
         '''
         try:
             user_id = self.authenticator.authenticate_client(token)
@@ -100,7 +100,7 @@ class PetDataHandler:
                     updated_pet_list = [new_pet]
                 
                 update_user = Users.update(user_id,{'pets':updated_pet_list})
-                output = True if update_user else False
+                output = new_pet if update_user else False
                 return output
                 
             else:

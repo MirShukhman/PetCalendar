@@ -313,7 +313,7 @@ class Routes(Blueprint):
             Header: json, {"Authorization" : "token_str}
             Body: json, 
                     {"pet_data":{dict of pet data}}
-        Output: json, {'new_pet':True} + 201 / {'err_type': 'err_msg'} + 400/500
+        Output: json, {'new_pet_id':'new_pet_id_str'} + 201 / {'err_type': 'err_msg'} + 400/500
         '''
         try:
             token = request.headers.get('Authorization')
@@ -330,7 +330,7 @@ class Routes(Blueprint):
             new_pet = self.pet_handler.add_pet(token,pet_data)
             output = new_pet
             if new_pet:
-                return jsonify({'new_pet': True}), 201
+                return jsonify({'new_pet_id': new_pet}), 201
             else:
                 return jsonify({'internal_err': 'Unknown error occurred'}), 500
         
