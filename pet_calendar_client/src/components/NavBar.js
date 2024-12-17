@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, TouchableOpacity, Text, StyleSheet, Image } from 'react-native';
+import { View, Text, StyleSheet, Image, TouchableWithoutFeedback } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 
 const NavBar = ({ state, descriptors, navigation }) => {
@@ -41,27 +41,29 @@ const NavBar = ({ state, descriptors, navigation }) => {
             }
           };
 
-          const buttonStyles = [
-            styles.navBarButton,
-            isFocused ? styles.navBarButtonActive : null,
-            index === 0 ? styles.leftMostButton : null,
-            index === state.routes.length - 1 ? styles.rightMostButton : null,
-          ];
-
           return (
-              <TouchableOpacity key={index} onPress={onPress} style={buttonStyles}>
-                  <View style={styles.buttonContent}>
-                  {isFocused && (
-                      <Image
-                      source={require('../assets/images/paw_black.png')}
-                      style={styles.pawBackground}
-                      />
-                  )}
-                  <Text style={[styles.navBarButtonText, isFocused && styles.focusedText]}>
-                      {label}
-                  </Text>
-                  </View>
-              </TouchableOpacity>
+            <TouchableWithoutFeedback key={index} onPress={onPress}>
+            <View
+              style={[
+                styles.navBarButton,
+                isFocused ? styles.navBarButtonActive : null,
+                index === 0 ? styles.leftMostButton : null,
+                index === state.routes.length - 1 ? styles.rightMostButton : null,
+              ]}
+            >
+              <View style={styles.buttonContent}>
+                {isFocused && (
+                  <Image
+                    source={require('../assets/images/paw_black.png')}
+                    style={styles.pawBackground}
+                  />
+                )}
+                <Text style={[styles.navBarButtonText, isFocused && styles.focusedText]}>
+                  {label}
+                </Text>
+              </View>
+            </View>
+          </TouchableWithoutFeedback>
           );
         })}
       </View>

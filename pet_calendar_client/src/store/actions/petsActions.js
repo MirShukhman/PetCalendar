@@ -1,4 +1,17 @@
 import { db } from "../../db/migrations";
+import { restorePetData } from "../../api/endPoints";
+import { setPets } from "../reducers/petsReducer";
+
+/*
+  The actions are the instructions that would tell the reducers what to do.
+
+  as an example, fetchPets() is an action that would:
+    1. get the pets list from the database and hold it in a local array
+    2. call the reducer using dispatch(); and send the action { type: 'SET_PETS', payload: petsArray }
+    this would make the reducer update the state to the new array
+
+    other actions would work in a similiar general manner
+*/
 
 export function fetchPets() {
     return (dispatch) => {
@@ -9,18 +22,27 @@ export function fetchPets() {
           (tx, results) => {
             let petsArray = [];
             for (let i = 0; i < results.rows.length; i++) {
-              petsArray.push(results.rows.item(i)); // Corrected to results.rows.item(i)
+              petsArray.push(results.rows.item(i));
             }
-            console.log('Fetched pets:', petsArray); // Log the fetched pets for debugging
+            console.log('Fetched pets:', petsArray);
             dispatch({ type: 'SET_PETS', payload: petsArray });
           },
           (error) => {
-            console.error('Error fetching pets:', error); // Log any query errors
+            console.error('Error fetching pets:', error);
           }
         );
       });
     };
   }
+
+export function fetchPetsIfNotLoaded(){
+  return (dispatch, getState) => {
+    const { pets } = getState();
+    if(!pets || pets.length == 0){
+      dispatch(fetchPets());
+    }
+  }
+}
 
 export function addPet(newPet){
     return (dispatch) => {
@@ -56,4 +78,16 @@ export function deletePet(petID) {
         );
       });
     };
-  }
+}
+
+export function fetchPetsFromServer() {
+  return async (dispatch) => {
+    const result = await restorePetData();
+    if(result.pet_data){
+      dispatch(setPets(result.pet_data));
+    }
+    else{
+      console.error('Failed to fetch pet data ', error);
+    }
+  };
+};

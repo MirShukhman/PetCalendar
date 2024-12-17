@@ -2,23 +2,42 @@ import React, { useState, useContext, useEffect } from 'react';
 import { FlatList, View, Text, Button, StyleSheet } from 'react-native';
 import MainScreensWrapper from '../../components/MainScreensWrapper';
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchPets, addPet, deletePet } from '../../store/actions/petsActions';
+import { fetchPets, deletePet, fetchPetsIfNotLoaded } from '../../store/actions/petsActions';
+import { Alert } from 'react-native';
+
+/* Redux explanation notes:
+  We use the redux global state in this UI.
+  for that we use the react-redux hooks: useDispatch and useSelector
+  useDispatch - allows us to execute actions
+  useSelector - allows us to fetch data from the state
+  
+  besides those quirks, the code here is pretty self-explanatory
+*/
+
 
 const AllPetsScreen = ({ navigation }) => {
 
     const dispatch = useDispatch();
     const pets = useSelector(state => state.pets);
+
     useEffect(() => {
-        dispatch(fetchPets());
+        dispatch(fetchPetsIfNotLoaded());
     }, [dispatch]);
 
-    const handleAddPet = () => {
-        const newPet = { type: 'Dog', name: 'Nairobi', age: 4, color: 'brown', demeanor: 'couch-friendly'};
-        dispatch(addPet(newPet));
-    }
-
     const handleDeletePet = (id) => {
-      dispatch(deletePet(id));
+      Alert.alert("Are you sure?",
+        "Deleting a pet can not be undone",
+        [{
+          text:"Cancel",
+          style: "cancel"
+        },
+        {
+          text: "OK",
+          onPress: () => dispatch(deletePet(id))
+        }
+      ],
+        { cancelable: true }
+      );
     }
 
     const openAddPetScreen = () => {
@@ -26,9 +45,11 @@ const AllPetsScreen = ({ navigation }) => {
             screen: 'AddPet',
         });
     };
+
+
     console.log('Pets data:', pets);
     return (
-      <MainScreensWrapper title="All Pets" style={{ flex: 1 }}>
+      <MainScreensWrapper title="My Pets" style={{ flex: 1 }}>
         <Button title="Add Pet" onPress={openAddPetScreen} />
         <View style={styles.petsList}>
           <FlatList

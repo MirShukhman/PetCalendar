@@ -17,20 +17,16 @@ import { addPet } from '../../store/actions/petsActions';
 const AddPetScreen = ({ navigation }) => {
   const dispatch = useDispatch();
 
-  // State for form inputs
   const [name, setName] = useState('');
   const [type, setType] = useState('');
   const [age, setAge] = useState('');
   const [color, setColor] = useState('');
   const [demeanor, setDemeanor] = useState('');
 
-  // State for modal
   const [isModalVisible, setIsModalVisible] = useState(false);
 
-  // Fetch pet types from Redux
   const petTypes = useSelector((state) => state.petTypes);
 
-  // Fetch pet types on mount
   React.useEffect(() => {
     dispatch(fetchPetTypes());
   }, [dispatch]);
@@ -51,6 +47,7 @@ const AddPetScreen = ({ navigation }) => {
 
     dispatch(addPet(newPet));
     Alert.alert('Success', 'Pet added successfully!');
+    
     navigation.goBack();
   };
 

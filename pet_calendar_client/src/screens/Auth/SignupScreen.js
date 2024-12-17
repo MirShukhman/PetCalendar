@@ -1,13 +1,20 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { AuthContext } from '../../context/AuthContext';
 import { Text, Button, View, StyleSheet } from 'react-native';
 
 const SignupScreen = ({ navigation }) => {
-    const { setIsLoggedIn } = useContext(AuthContext);
-    
+    const [email, setEmail] = useState('');
+    const [phone, setPhone] = useState('');
+    const [nickname, setNickname] = useState('');
+
     const handleSignUp = () => {
-        //some login logic
-        setIsLoggedIn(true);
+        // call the signup api, if all is ok pass to confirm login
+
+        setEmail("myEmail@mail.com");
+        setPhone("0501234567");
+        setNickname("Its'a me, Mario");
+
+        navigation.navigate('AuthStack', { screen: 'ConfirmLogin' });
     }
 
     return(

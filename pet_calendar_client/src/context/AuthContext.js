@@ -1,7 +1,7 @@
 import React, { createContext, useState } from 'react';
 
 export const AuthContext = createContext();
-
+// save the token, isTokenExist...
 export const AuthProvider = ({ children }) => {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
 
