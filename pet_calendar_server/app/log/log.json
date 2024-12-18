@@ -1,0 +1,1754 @@
+[
+  {
+    "id": 1,
+    "datetime": "2024-12-09 16:30:05.446551",
+    "class_name": "Users",
+    "func_name": "get_obj_by_filter",
+    "func_input": "{'email': 'artyom1100@gmail.com', 'phone': '0542565362'}",
+    "func_output": "[{'_id': '67505e920f8a2f4820c299c4', 'email': 'artyom1100@gmail.com', 'phone': '0542565362', 'nickname': 'Moose', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA'}]"
+  },
+  {
+    "id": 2,
+    "datetime": "2024-12-09 16:30:05.550153",
+    "class_name": "EmailHandler",
+    "func_name": "_create_verification_message",
+    "func_input": "849071",
+    "func_output": "True"
+  },
+  {
+    "id": 3,
+    "datetime": "2024-12-09 16:30:06.928052",
+    "class_name": "EmailHandler",
+    "func_name": "_send_email",
+    "func_input": "('artyom1100@gmail.com', 'Your Verification Code')",
+    "func_output": "True"
+  },
+  {
+    "id": 4,
+    "datetime": "2024-12-09 16:30:06.945129",
+    "class_name": "EmailHandler",
+    "func_name": "send_verification_email",
+    "func_input": "('artyom1100@gmail.com', 849071)",
+    "func_output": "True"
+  },
+  {
+    "id": 5,
+    "datetime": "2024-12-09 16:30:07.010238",
+    "class_name": "Users",
+    "func_name": "update",
+    "func_input": "('67505e920f8a2f4820c299c4', {'email_code': 849071})",
+    "func_output": "True"
+  },
+  {
+    "id": 6,
+    "datetime": "2024-12-09 16:30:07.029212",
+    "class_name": "LoginHandler",
+    "func_name": "login",
+    "func_input": "('artyom1100@gmail.com', '0542565362')",
+    "func_output": "True"
+  },
+  {
+    "id": 7,
+    "datetime": "2024-12-09 16:30:07.049488",
+    "class_name": "Routes",
+    "func_name": "login",
+    "func_input": "{'email': 'artyom1100@gmail.com', 'phone': '0542565362'}",
+    "func_output": "True"
+  },
+  {
+    "id": 8,
+    "datetime": "2024-12-09 21:35:48.270164",
+    "class_name": "Users",
+    "func_name": "get_obj_by_filter",
+    "func_input": "{'email': 'artyom1100@gmail.com', 'phone': '0542565362'}",
+    "func_output": "[{'_id': '67505e920f8a2f4820c299c4', 'email': 'artyom1100@gmail.com', 'phone': '0542565362', 'nickname': 'Moose', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA', 'email_code': 849071}]"
+  },
+  {
+    "id": 9,
+    "datetime": "2024-12-09 21:35:48.296155",
+    "class_name": "EmailHandler",
+    "func_name": "_create_verification_message",
+    "func_input": "302373",
+    "func_output": "True"
+  },
+  {
+    "id": 10,
+    "datetime": "2024-12-09 21:35:50.098159",
+    "class_name": "EmailHandler",
+    "func_name": "_send_email",
+    "func_input": "('artyom1100@gmail.com', 'Your Verification Code')",
+    "func_output": "True"
+  },
+  {
+    "id": 11,
+    "datetime": "2024-12-09 21:35:50.116160",
+    "class_name": "EmailHandler",
+    "func_name": "send_verification_email",
+    "func_input": "('artyom1100@gmail.com', 302373)",
+    "func_output": "True"
+  },
+  {
+    "id": 12,
+    "datetime": "2024-12-09 21:35:50.162163",
+    "class_name": "Users",
+    "func_name": "update",
+    "func_input": "('67505e920f8a2f4820c299c4', {'email_code': 302373})",
+    "func_output": "True"
+  },
+  {
+    "id": 13,
+    "datetime": "2024-12-09 21:35:50.181154",
+    "class_name": "LoginHandler",
+    "func_name": "login",
+    "func_input": "('artyom1100@gmail.com', '0542565362')",
+    "func_output": "True"
+  },
+  {
+    "id": 14,
+    "datetime": "2024-12-09 21:35:50.205157",
+    "class_name": "Routes",
+    "func_name": "login",
+    "func_input": "{'email': 'artyom1100@gmail.com', 'phone': '0542565362'}",
+    "func_output": "True"
+  },
+  {
+    "id": 15,
+    "datetime": "2024-12-10 14:30:18.041904",
+    "class_name": "Users",
+    "func_name": "get_obj_by_filter",
+    "func_input": "{'email': 'artyom1100@gmail.com', 'phone': '0542565362'}",
+    "func_output": "[{'_id': '67505e920f8a2f4820c299c4', 'email': 'artyom1100@gmail.com', 'phone': '0542565362', 'nickname': 'Moose', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA', 'email_code': 302373}]"
+  },
+  {
+    "id": 16,
+    "datetime": "2024-12-10 14:30:18.058910",
+    "class_name": "LoginHandler",
+    "func_name": "sign_up",
+    "func_input": "('artyom1100@gmail.com', '0542565362', None)",
+    "func_output": "user with credentials exists"
+  },
+  {
+    "id": 17,
+    "datetime": "2024-12-10 14:30:18.080906",
+    "class_name": "Routes",
+    "func_name": "signup",
+    "func_input": "{'email': 'artyom1100@gmail.com', 'phone': '0542565362'}",
+    "func_output": "err"
+  },
+  {
+    "id": 18,
+    "datetime": "2024-12-10 14:30:38.458431",
+    "class_name": "Users",
+    "func_name": "get_obj_by_filter",
+    "func_input": "{'email': 'new@gmail.com', 'phone': '0542565362'}",
+    "func_output": "[]"
+  },
+  {
+    "id": 19,
+    "datetime": "2024-12-10 14:30:38.544224",
+    "class_name": "EmailHandler",
+    "func_name": "_create_verification_message",
+    "func_input": "120316",
+    "func_output": "True"
+  },
+  {
+    "id": 20,
+    "datetime": "2024-12-10 14:30:41.123682",
+    "class_name": "EmailHandler",
+    "func_name": "_send_email",
+    "func_input": "('new@gmail.com', 'Your Verification Code')",
+    "func_output": "True"
+  },
+  {
+    "id": 21,
+    "datetime": "2024-12-10 14:30:41.143675",
+    "class_name": "EmailHandler",
+    "func_name": "send_verification_email",
+    "func_input": "('new@gmail.com', 120316)",
+    "func_output": "True"
+  },
+  {
+    "id": 22,
+    "datetime": "2024-12-10 14:30:41.191680",
+    "class_name": "Users",
+    "func_name": "add",
+    "func_input": "{'email': 'new@gmail.com', 'phone': '0542565362', 'nickname': None, 'email_code': 120316, '_id': ObjectId('67583471ce90594d45942ad2')}",
+    "func_output": "67583471ce90594d45942ad2"
+  },
+  {
+    "id": 23,
+    "datetime": "2024-12-10 14:30:41.210679",
+    "class_name": "LoginHandler",
+    "func_name": "sign_up",
+    "func_input": "('new@gmail.com', '0542565362', None)",
+    "func_output": "True"
+  },
+  {
+    "id": 24,
+    "datetime": "2024-12-10 14:33:54.678168",
+    "class_name": "Routes",
+    "func_name": "signup",
+    "func_input": "no data",
+    "func_output": "err"
+  },
+  {
+    "id": 25,
+    "datetime": "2024-12-10 14:40:44.679895",
+    "class_name": "Users",
+    "func_name": "get_obj_by_filter",
+    "func_input": "{'email': 'new@gmail.com', 'phone': '0542565362'}",
+    "func_output": "[{'_id': '67583471ce90594d45942ad2', 'email': 'new@gmail.com', 'phone': '0542565362', 'nickname': None, 'email_code': 120316}]"
+  },
+  {
+    "id": 26,
+    "datetime": "2024-12-10 14:40:44.697929",
+    "class_name": "LoginHandler",
+    "func_name": "sign_up",
+    "func_input": "('new@gmail.com', '0542565362', 'New')",
+    "func_output": "user with credentials exists"
+  },
+  {
+    "id": 27,
+    "datetime": "2024-12-10 14:40:44.715947",
+    "class_name": "Routes",
+    "func_name": "signup",
+    "func_input": "{'email': 'new@gmail.com', 'phone': '0542565362', 'nickname': 'New'}",
+    "func_output": "{'user_err': 'user with credentials exists'}"
+  },
+  {
+    "id": 28,
+    "datetime": "2024-12-10 14:41:07.714360",
+    "class_name": "Users",
+    "func_name": "get_obj_by_filter",
+    "func_input": "{'email': 'new@gmail.com', 'phone': '0542565362'}",
+    "func_output": "[]"
+  },
+  {
+    "id": 29,
+    "datetime": "2024-12-10 14:41:07.737361",
+    "class_name": "EmailHandler",
+    "func_name": "_create_verification_message",
+    "func_input": "151077",
+    "func_output": "True"
+  },
+  {
+    "id": 30,
+    "datetime": "2024-12-10 14:41:08.946102",
+    "class_name": "EmailHandler",
+    "func_name": "_send_email",
+    "func_input": "('new@gmail.com', 'Your Verification Code')",
+    "func_output": "True"
+  },
+  {
+    "id": 31,
+    "datetime": "2024-12-10 14:41:08.963105",
+    "class_name": "EmailHandler",
+    "func_name": "send_verification_email",
+    "func_input": "('new@gmail.com', 151077)",
+    "func_output": "True"
+  },
+  {
+    "id": 32,
+    "datetime": "2024-12-10 14:41:08.988107",
+    "class_name": "Users",
+    "func_name": "add",
+    "func_input": "{'email': 'new@gmail.com', 'phone': '0542565362', 'nickname': 'New', 'email_code': 151077, '_id': ObjectId('675836e4339508e6c1568c6b')}",
+    "func_output": "675836e4339508e6c1568c6b"
+  },
+  {
+    "id": 33,
+    "datetime": "2024-12-10 14:41:09.007102",
+    "class_name": "LoginHandler",
+    "func_name": "sign_up",
+    "func_input": "('new@gmail.com', '0542565362', 'New')",
+    "func_output": "True"
+  },
+  {
+    "id": 34,
+    "datetime": "2024-12-10 14:41:09.026102",
+    "class_name": "Routes",
+    "func_name": "signup",
+    "func_input": "{'email': 'new@gmail.com', 'phone': '0542565362', 'nickname': 'New'}",
+    "func_output": "not enough values to unpack (expected 3, got 2)"
+  },
+  {
+    "id": 35,
+    "datetime": "2024-12-10 14:43:20.244356",
+    "class_name": "Users",
+    "func_name": "get_obj_by_filter",
+    "func_input": "{'email': 'new@gmail.com', 'phone': '0542565362'}",
+    "func_output": "[]"
+  },
+  {
+    "id": 36,
+    "datetime": "2024-12-10 14:43:20.274348",
+    "class_name": "EmailHandler",
+    "func_name": "_create_verification_message",
+    "func_input": "282589",
+    "func_output": "True"
+  },
+  {
+    "id": 37,
+    "datetime": "2024-12-10 14:43:21.470292",
+    "class_name": "EmailHandler",
+    "func_name": "_send_email",
+    "func_input": "('new@gmail.com', 'Your Verification Code')",
+    "func_output": "True"
+  },
+  {
+    "id": 38,
+    "datetime": "2024-12-10 14:43:21.500352",
+    "class_name": "EmailHandler",
+    "func_name": "send_verification_email",
+    "func_input": "('new@gmail.com', 282589)",
+    "func_output": "True"
+  },
+  {
+    "id": 39,
+    "datetime": "2024-12-10 14:43:21.525348",
+    "class_name": "Users",
+    "func_name": "add",
+    "func_input": "{'email': 'new@gmail.com', 'phone': '0542565362', 'nickname': 'New', 'email_code': 282589, '_id': ObjectId('6758376942ed56f191cc1b65')}",
+    "func_output": "6758376942ed56f191cc1b65"
+  },
+  {
+    "id": 40,
+    "datetime": "2024-12-10 14:43:21.548354",
+    "class_name": "LoginHandler",
+    "func_name": "sign_up",
+    "func_input": "('new@gmail.com', '0542565362', 'New')",
+    "func_output": "True"
+  },
+  {
+    "id": 41,
+    "datetime": "2024-12-10 14:43:21.568343",
+    "class_name": "Routes",
+    "func_name": "signup",
+    "func_input": "{'email': 'new@gmail.com', 'phone': '0542565362', 'nickname': 'New'}",
+    "func_output": "True"
+  },
+  {
+    "id": 42,
+    "datetime": "2024-12-10 14:43:27.402496",
+    "class_name": "Users",
+    "func_name": "get_obj_by_filter",
+    "func_input": "{'email': 'new@gmail.com', 'phone': '0542565362'}",
+    "func_output": "[{'_id': '6758376942ed56f191cc1b65', 'email': 'new@gmail.com', 'phone': '0542565362', 'nickname': 'New', 'email_code': 282589}]"
+  },
+  {
+    "id": 43,
+    "datetime": "2024-12-10 14:43:27.421079",
+    "class_name": "LoginHandler",
+    "func_name": "sign_up",
+    "func_input": "('new@gmail.com', '0542565362', 'New')",
+    "func_output": "user with credentials exists"
+  },
+  {
+    "id": 44,
+    "datetime": "2024-12-10 14:43:27.442089",
+    "class_name": "Routes",
+    "func_name": "signup",
+    "func_input": "{'email': 'new@gmail.com', 'phone': '0542565362', 'nickname': 'New'}",
+    "func_output": "{'user_err': 'user with credentials exists'}"
+  },
+  {
+    "id": 45,
+    "datetime": "2024-12-10 14:44:43.432434",
+    "class_name": "Users",
+    "func_name": "get_obj_by_filter",
+    "func_input": "{'email': 'new@gmail.com', 'phone': '0542565362'}",
+    "func_output": "[{'_id': '6758376942ed56f191cc1b65', 'email': 'new@gmail.com', 'phone': '0542565362', 'nickname': 'New', 'email_code': 282589}]"
+  },
+  {
+    "id": 46,
+    "datetime": "2024-12-10 14:44:43.905474",
+    "class_name": "Users",
+    "func_name": "update",
+    "func_input": "('6758376942ed56f191cc1b65', {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1ODM3Njk0MmVkNTZmMTkxY2MxYjY1IiwiY3JlYXRlZCI6IjIwMjQtMTItMTBUMTQ6NDQ6NDMuNDM2NDI3In0.Y-xqz5z3bKKvOn8sZhn7Uy25SKljdkThth8G0gfq9d8'})",
+    "func_output": "True"
+  },
+  {
+    "id": 47,
+    "datetime": "2024-12-10 14:44:43.931472",
+    "class_name": "Token",
+    "func_name": "generate_token",
+    "func_input": "6758376942ed56f191cc1b65",
+    "func_output": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1ODM3Njk0MmVkNTZmMTkxY2MxYjY1IiwiY3JlYXRlZCI6IjIwMjQtMTItMTBUMTQ6NDQ6NDMuNDM2NDI3In0.Y-xqz5z3bKKvOn8sZhn7Uy25SKljdkThth8G0gfq9d8"
+  },
+  {
+    "id": 48,
+    "datetime": "2024-12-10 14:44:43.959473",
+    "class_name": "Users",
+    "func_name": "delete_fields",
+    "func_input": "('6758376942ed56f191cc1b65', ['email_code'])",
+    "func_output": "True"
+  },
+  {
+    "id": 49,
+    "datetime": "2024-12-10 14:44:43.984467",
+    "class_name": "LoginHandler",
+    "func_name": "confirm_login",
+    "func_input": "('new@gmail.com', '0542565362')",
+    "func_output": "True"
+  },
+  {
+    "id": 50,
+    "datetime": "2024-12-10 14:44:44.004468",
+    "class_name": "Routes",
+    "func_name": "confirm_login",
+    "func_input": "{'email': 'new@gmail.com', 'phone': '0542565362', 'code': '282589'}",
+    "func_output": "True"
+  },
+  {
+    "id": 51,
+    "datetime": "2024-12-10 14:45:12.204415",
+    "class_name": "Users",
+    "func_name": "get_obj_by_filter",
+    "func_input": "{'email': 'new@gmail.com', 'phone': '0542565362'}",
+    "func_output": "[{'_id': '6758376942ed56f191cc1b65', 'email': 'new@gmail.com', 'phone': '0542565362', 'nickname': 'New', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1ODM3Njk0MmVkNTZmMTkxY2MxYjY1IiwiY3JlYXRlZCI6IjIwMjQtMTItMTBUMTQ6NDQ6NDMuNDM2NDI3In0.Y-xqz5z3bKKvOn8sZhn7Uy25SKljdkThth8G0gfq9d8'}]"
+  },
+  {
+    "id": 52,
+    "datetime": "2024-12-10 14:45:12.224420",
+    "class_name": "LoginHandler",
+    "func_name": "confirm_login",
+    "func_input": "('new@gmail.com', '0542565362')",
+    "func_output": "'email_code'"
+  },
+  {
+    "id": 53,
+    "datetime": "2024-12-10 14:45:12.245415",
+    "class_name": "Routes",
+    "func_name": "confirm_login",
+    "func_input": "{'email': 'new@gmail.com', 'phone': '0542565362', 'code': 'fff'}",
+    "func_output": "{'internal_err': \"'email_code'\"}"
+  },
+  {
+    "id": 54,
+    "datetime": "2024-12-10 14:46:27.216270",
+    "class_name": "Routes",
+    "func_name": "logout",
+    "func_input": "no data",
+    "func_output": "{'user_err': 'Incomplete or no data provided'}"
+  },
+  {
+    "id": 55,
+    "datetime": "2024-12-10 14:47:47.473334",
+    "class_name": "Routes",
+    "func_name": "logout",
+    "func_input": "no data",
+    "func_output": "{'user_err': 'Incomplete or no data provided'}"
+  },
+  {
+    "id": 56,
+    "datetime": "2024-12-10 14:48:42.395225",
+    "class_name": "Routes",
+    "func_name": "logout",
+    "func_input": "no data",
+    "func_output": "{'user_err': 'Incomplete or no data provided'}"
+  },
+  {
+    "id": 57,
+    "datetime": "2024-12-10 14:49:44.844838",
+    "class_name": "Routes",
+    "func_name": "logout",
+    "func_input": "no data",
+    "func_output": "{'user_err': 'Incomplete or no data provided'}"
+  },
+  {
+    "id": 58,
+    "datetime": "2024-12-10 14:55:07.697440",
+    "class_name": "Routes",
+    "func_name": "logout",
+    "func_input": "no data",
+    "func_output": "{'user_err': 'Incomplete or no data provided'}"
+  },
+  {
+    "id": 59,
+    "datetime": "2024-12-10 14:58:16.738154",
+    "class_name": "Routes",
+    "func_name": "logout",
+    "func_input": "no data",
+    "func_output": "{'user_err': 'Incomplete or no data provided'}"
+  },
+  {
+    "id": 60,
+    "datetime": "2024-12-10 15:03:35.073660",
+    "class_name": "Authenticator",
+    "func_name": "_decode_token",
+    "func_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1ODM3Njk0MmVkNTZmMTkxY2MxYjY1IiwiY3JlYXRlZCI6IjIwMjQtMTItMTBUMTQ6NDQ6NDMuNDM2NDI3In0.Y-xqz5z3bKKvOn8sZhn7Uy25SKljdkThth8G0gfq9d8",
+    "func_output": "{'user_id': '6758376942ed56f191cc1b65', 'created': '2024-12-10T14:44:43.436427'}"
+  },
+  {
+    "id": 61,
+    "datetime": "2024-12-10 15:03:35.095657",
+    "class_name": "Authenticator",
+    "func_name": "authenticate_client",
+    "func_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1ODM3Njk0MmVkNTZmMTkxY2MxYjY1IiwiY3JlYXRlZCI6IjIwMjQtMTItMTBUMTQ6NDQ6NDMuNDM2NDI3In0.Y-xqz5z3bKKvOn8sZhn7Uy25SKljdkThth8G0gfq9d8",
+    "func_output": "6758376942ed56f191cc1b65"
+  },
+  {
+    "id": 62,
+    "datetime": "2024-12-10 15:03:35.180192",
+    "class_name": "Users",
+    "func_name": "delete_fields",
+    "func_input": "('6758376942ed56f191cc1b65', ['token'])",
+    "func_output": "True"
+  },
+  {
+    "id": 63,
+    "datetime": "2024-12-10 15:03:35.202190",
+    "class_name": "LoginToken",
+    "func_name": "delete_token",
+    "func_input": "6758376942ed56f191cc1b65",
+    "func_output": "True"
+  },
+  {
+    "id": 64,
+    "datetime": "2024-12-10 15:03:35.227603",
+    "class_name": "LoginHandler",
+    "func_name": "logout",
+    "func_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1ODM3Njk0MmVkNTZmMTkxY2MxYjY1IiwiY3JlYXRlZCI6IjIwMjQtMTItMTBUMTQ6NDQ6NDMuNDM2NDI3In0.Y-xqz5z3bKKvOn8sZhn7Uy25SKljdkThth8G0gfq9d8",
+    "func_output": "True"
+  },
+  {
+    "id": 65,
+    "datetime": "2024-12-10 15:03:35.250586",
+    "class_name": "Routes",
+    "func_name": "logout",
+    "func_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1ODM3Njk0MmVkNTZmMTkxY2MxYjY1IiwiY3JlYXRlZCI6IjIwMjQtMTItMTBUMTQ6NDQ6NDMuNDM2NDI3In0.Y-xqz5z3bKKvOn8sZhn7Uy25SKljdkThth8G0gfq9d8",
+    "func_output": "True"
+  },
+  {
+    "id": 66,
+    "datetime": "2024-12-13 16:31:38.661539",
+    "class_name": "Authenticator",
+    "func_name": "_decode_token",
+    "func_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA",
+    "func_output": "{'user_id': '67505e920f8a2f4820c299c4', 'created': '2024-12-06T02:56:55.633318'}"
+  },
+  {
+    "id": 67,
+    "datetime": "2024-12-13 16:31:38.684522",
+    "class_name": "Authenticator",
+    "func_name": "authenticate_client",
+    "func_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA",
+    "func_output": "67505e920f8a2f4820c299c4"
+  },
+  {
+    "id": 68,
+    "datetime": "2024-12-13 16:31:38.848550",
+    "class_name": "Users",
+    "func_name": "get_obj_by_filter",
+    "func_input": "{'email': 'new@gmail.com', 'phone': '0542565362'}",
+    "func_output": "[{'_id': '6758376942ed56f191cc1b65', 'email': 'new@gmail.com', 'phone': '0542565362', 'nickname': 'New'}]"
+  },
+  {
+    "id": 69,
+    "datetime": "2024-12-13 16:31:38.876530",
+    "class_name": "UserDataHandler",
+    "func_name": "edit_uder_data",
+    "func_input": "('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA', 'new@gmail.com', '0542565362', 'fff')",
+    "func_output": "user with credentials exists"
+  },
+  {
+    "id": 70,
+    "datetime": "2024-12-13 16:31:38.902523",
+    "class_name": "Routes",
+    "func_name": "edit_uder_data",
+    "func_input": "('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA', {'email': 'new@gmail.com', 'phone': '0542565362', 'nickname': 'fff'})",
+    "func_output": "{'user_err': 'user with credentials exists'}"
+  },
+  {
+    "id": 71,
+    "datetime": "2024-12-13 16:32:17.910485",
+    "class_name": "Authenticator",
+    "func_name": "_decode_token",
+    "func_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA",
+    "func_output": "{'user_id': '67505e920f8a2f4820c299c4', 'created': '2024-12-06T02:56:55.633318'}"
+  },
+  {
+    "id": 72,
+    "datetime": "2024-12-13 16:32:17.933500",
+    "class_name": "Authenticator",
+    "func_name": "authenticate_client",
+    "func_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA",
+    "func_output": "67505e920f8a2f4820c299c4"
+  },
+  {
+    "id": 73,
+    "datetime": "2024-12-13 16:32:17.988498",
+    "class_name": "Users",
+    "func_name": "get_obj_by_filter",
+    "func_input": "{'email': 'artyom1100@gmail.com', 'phone': '054555555'}",
+    "func_output": "[{'_id': '6750634ec79b3c20ac080423', 'email': 'artyom1100@gmail.com', 'phone': '054555555', 'nickname': 'Arty', 'email_code': 358336}]"
+  },
+  {
+    "id": 74,
+    "datetime": "2024-12-13 16:32:18.014486",
+    "class_name": "UserDataHandler",
+    "func_name": "edit_uder_data",
+    "func_input": "('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA', 'artyom1100@gmail.com', '054555555', 'LooseyMoosey')",
+    "func_output": "user with credentials exists"
+  },
+  {
+    "id": 75,
+    "datetime": "2024-12-13 16:32:18.035489",
+    "class_name": "Routes",
+    "func_name": "edit_uder_data",
+    "func_input": "('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA', {'email': 'artyom1100@gmail.com', 'phone': '054555555', 'nickname': 'LooseyMoosey'})",
+    "func_output": "{'user_err': 'user with credentials exists'}"
+  },
+  {
+    "id": 76,
+    "datetime": "2024-12-13 16:32:21.529740",
+    "class_name": "Authenticator",
+    "func_name": "_decode_token",
+    "func_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA",
+    "func_output": "{'user_id': '67505e920f8a2f4820c299c4', 'created': '2024-12-06T02:56:55.633318'}"
+  },
+  {
+    "id": 77,
+    "datetime": "2024-12-13 16:32:21.554731",
+    "class_name": "Authenticator",
+    "func_name": "authenticate_client",
+    "func_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA",
+    "func_output": "67505e920f8a2f4820c299c4"
+  },
+  {
+    "id": 78,
+    "datetime": "2024-12-13 16:32:21.618952",
+    "class_name": "Users",
+    "func_name": "get_obj_by_filter",
+    "func_input": "{'email': 'artyom1100@gmail.com', 'phone': '054555555'}",
+    "func_output": "[{'_id': '6750634ec79b3c20ac080423', 'email': 'artyom1100@gmail.com', 'phone': '054555555', 'nickname': 'Arty', 'email_code': 358336}]"
+  },
+  {
+    "id": 79,
+    "datetime": "2024-12-13 16:32:21.644941",
+    "class_name": "UserDataHandler",
+    "func_name": "edit_uder_data",
+    "func_input": "('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA', 'artyom1100@gmail.com', '054555555', 'LooseyMoosey')",
+    "func_output": "user with credentials exists"
+  },
+  {
+    "id": 80,
+    "datetime": "2024-12-13 16:32:21.669936",
+    "class_name": "Routes",
+    "func_name": "edit_uder_data",
+    "func_input": "('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA', {'email': 'artyom1100@gmail.com', 'phone': '054555555', 'nickname': 'LooseyMoosey'})",
+    "func_output": "{'user_err': 'user with credentials exists'}"
+  },
+  {
+    "id": 81,
+    "datetime": "2024-12-13 16:33:53.706040",
+    "class_name": "Authenticator",
+    "func_name": "_decode_token",
+    "func_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA",
+    "func_output": "{'user_id': '67505e920f8a2f4820c299c4', 'created': '2024-12-06T02:56:55.633318'}"
+  },
+  {
+    "id": 82,
+    "datetime": "2024-12-13 16:33:53.729027",
+    "class_name": "Authenticator",
+    "func_name": "authenticate_client",
+    "func_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA",
+    "func_output": "67505e920f8a2f4820c299c4"
+  },
+  {
+    "id": 83,
+    "datetime": "2024-12-13 16:33:53.784019",
+    "class_name": "Users",
+    "func_name": "get_obj_by_filter",
+    "func_input": "{'email': 'artyom1100@gmail.com', 'phone': '0542565362'}",
+    "func_output": "[{'_id': '67505e920f8a2f4820c299c4', 'email': 'artyom1100@gmail.com', 'phone': '0542565362', 'nickname': 'Moose', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA', 'email_code': 302373}]"
+  },
+  {
+    "id": 84,
+    "datetime": "2024-12-13 16:33:53.841024",
+    "class_name": "Users",
+    "func_name": "update",
+    "func_input": "('67505e920f8a2f4820c299c4', {'email': 'artyom1100@gmail.com', 'phone': '0542565362', 'nickname': 'LooseyMoosey'})",
+    "func_output": "True"
+  },
+  {
+    "id": 85,
+    "datetime": "2024-12-13 16:33:53.864026",
+    "class_name": "UserDataHandler",
+    "func_name": "edit_uder_data",
+    "func_input": "('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA', 'artyom1100@gmail.com', '0542565362', 'LooseyMoosey')",
+    "func_output": "True"
+  },
+  {
+    "id": 86,
+    "datetime": "2024-12-13 16:33:53.891023",
+    "class_name": "Routes",
+    "func_name": "edit_uder_data",
+    "func_input": "('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA', {'email': 'artyom1100@gmail.com', 'phone': '0542565362', 'nickname': 'LooseyMoosey'})",
+    "func_output": "True"
+  },
+  {
+    "id": 87,
+    "datetime": "2024-12-13 16:34:06.489012",
+    "class_name": "Authenticator",
+    "func_name": "_decode_token",
+    "func_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA",
+    "func_output": "{'user_id': '67505e920f8a2f4820c299c4', 'created': '2024-12-06T02:56:55.633318'}"
+  },
+  {
+    "id": 88,
+    "datetime": "2024-12-13 16:34:06.516013",
+    "class_name": "Authenticator",
+    "func_name": "authenticate_client",
+    "func_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA",
+    "func_output": "67505e920f8a2f4820c299c4"
+  },
+  {
+    "id": 89,
+    "datetime": "2024-12-13 16:34:06.576011",
+    "class_name": "Users",
+    "func_name": "get_obj_by_filter",
+    "func_input": "{'email': 'artyom1100@gmail.com', 'phone': '05222'}",
+    "func_output": "[]"
+  },
+  {
+    "id": 90,
+    "datetime": "2024-12-13 16:34:06.610016",
+    "class_name": "Users",
+    "func_name": "update",
+    "func_input": "('67505e920f8a2f4820c299c4', {'email': 'artyom1100@gmail.com', 'phone': '05222', 'nickname': 'LooseyMoosey'})",
+    "func_output": "True"
+  },
+  {
+    "id": 91,
+    "datetime": "2024-12-13 16:34:06.637018",
+    "class_name": "UserDataHandler",
+    "func_name": "edit_uder_data",
+    "func_input": "('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA', 'artyom1100@gmail.com', '05222', 'LooseyMoosey')",
+    "func_output": "True"
+  },
+  {
+    "id": 92,
+    "datetime": "2024-12-13 16:34:06.663005",
+    "class_name": "Routes",
+    "func_name": "edit_uder_data",
+    "func_input": "('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA', {'email': 'artyom1100@gmail.com', 'phone': '05222', 'nickname': 'LooseyMoosey'})",
+    "func_output": "True"
+  },
+  {
+    "id": 93,
+    "datetime": "2024-12-13 16:34:29.457943",
+    "class_name": "Routes",
+    "func_name": "edit_uder_data",
+    "func_input": "('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA', {'email': 'artyom1100@gmail.com', 'phone': '05222'})",
+    "func_output": "{'user_err': 'Incomplete or no data provided'}"
+  },
+  {
+    "id": 94,
+    "datetime": "2024-12-13 16:34:39.583305",
+    "class_name": "Routes",
+    "func_name": "edit_uder_data",
+    "func_input": "(None, 'no data')",
+    "func_output": "{'user_err': 'Incomplete or no data provided'}"
+  },
+  {
+    "id": 95,
+    "datetime": "2024-12-13 16:34:47.250773",
+    "class_name": "Routes",
+    "func_name": "edit_uder_data",
+    "func_input": "('', 'no data')",
+    "func_output": "{'user_err': 'Incomplete or no data provided'}"
+  },
+  {
+    "id": 96,
+    "datetime": "2024-12-13 16:44:13.649087",
+    "class_name": "Authenticator",
+    "func_name": "_decode_token",
+    "func_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDY1MGFjMjBmY2U4N2Y0NzIxZDU3IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMTk6NDM6MzUuMDMxMjUzIn0.Ui10dx6zXisnWUhz4Ywyisc2PlGGfw4AZpxUXXrzTYI",
+    "func_output": "{'user_id': '6750650ac20fce87f4721d57', 'created': '2024-12-06T19:43:35.031253'}"
+  },
+  {
+    "id": 97,
+    "datetime": "2024-12-13 16:44:13.677411",
+    "class_name": "Authenticator",
+    "func_name": "authenticate_client",
+    "func_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDY1MGFjMjBmY2U4N2Y0NzIxZDU3IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMTk6NDM6MzUuMDMxMjUzIn0.Ui10dx6zXisnWUhz4Ywyisc2PlGGfw4AZpxUXXrzTYI",
+    "func_output": "6750650ac20fce87f4721d57"
+  },
+  {
+    "id": 98,
+    "datetime": "2024-12-13 16:44:13.770302",
+    "class_name": "Users",
+    "func_name": "delete_obj",
+    "func_input": "6750650ac20fce87f4721d57",
+    "func_output": "True"
+  },
+  {
+    "id": 99,
+    "datetime": "2024-12-13 16:44:13.840312",
+    "class_name": "Authenticator",
+    "func_name": "_decode_token",
+    "func_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDY1MGFjMjBmY2U4N2Y0NzIxZDU3IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMTk6NDM6MzUuMDMxMjUzIn0.Ui10dx6zXisnWUhz4Ywyisc2PlGGfw4AZpxUXXrzTYI",
+    "func_output": "{'user_id': '6750650ac20fce87f4721d57', 'created': '2024-12-06T19:43:35.031253'}"
+  },
+  {
+    "id": 100,
+    "datetime": "2024-12-13 16:44:13.864307",
+    "class_name": "Authenticator",
+    "func_name": "authenticate_client",
+    "func_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDY1MGFjMjBmY2U4N2Y0NzIxZDU3IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMTk6NDM6MzUuMDMxMjUzIn0.Ui10dx6zXisnWUhz4Ywyisc2PlGGfw4AZpxUXXrzTYI",
+    "func_output": "6750650ac20fce87f4721d57"
+  },
+  {
+    "id": 101,
+    "datetime": "2024-12-13 16:44:13.931864",
+    "class_name": "Pets",
+    "func_name": "get_obj_by_filter",
+    "func_input": "{'user_id': '6750650ac20fce87f4721d57'}",
+    "func_output": "[{'_id': '6753377376e41d84018cf088', 'user_id': '6750650ac20fce87f4721d57', 'name': 'frogo', 'colour': 'brown poo'}, {'_id': '6753377a76e41d84018cf089', 'user_id': '6750650ac20fce87f4721d57', 'name': 'boo'}]"
+  },
+  {
+    "id": 102,
+    "datetime": "2024-12-13 16:44:13.959975",
+    "class_name": "Pets",
+    "func_name": "delete_obj",
+    "func_input": "6753377376e41d84018cf088",
+    "func_output": "True"
+  },
+  {
+    "id": 103,
+    "datetime": "2024-12-13 16:44:13.988071",
+    "class_name": "Pets",
+    "func_name": "delete_obj",
+    "func_input": "6753377a76e41d84018cf089",
+    "func_output": "True"
+  },
+  {
+    "id": 104,
+    "datetime": "2024-12-13 16:44:14.012275",
+    "class_name": "PetDataHandler",
+    "func_name": "delete_all_users_pets",
+    "func_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDY1MGFjMjBmY2U4N2Y0NzIxZDU3IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMTk6NDM6MzUuMDMxMjUzIn0.Ui10dx6zXisnWUhz4Ywyisc2PlGGfw4AZpxUXXrzTYI",
+    "func_output": "True"
+  },
+  {
+    "id": 105,
+    "datetime": "2024-12-13 16:44:14.039128",
+    "class_name": "UserDataHandler",
+    "func_name": "delete_user",
+    "func_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDY1MGFjMjBmY2U4N2Y0NzIxZDU3IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMTk6NDM6MzUuMDMxMjUzIn0.Ui10dx6zXisnWUhz4Ywyisc2PlGGfw4AZpxUXXrzTYI",
+    "func_output": "True"
+  },
+  {
+    "id": 106,
+    "datetime": "2024-12-13 16:44:14.062011",
+    "class_name": "Routes",
+    "func_name": "delete_user",
+    "func_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDY1MGFjMjBmY2U4N2Y0NzIxZDU3IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMTk6NDM6MzUuMDMxMjUzIn0.Ui10dx6zXisnWUhz4Ywyisc2PlGGfw4AZpxUXXrzTYI",
+    "func_output": "True"
+  },
+  {
+    "id": 107,
+    "datetime": "2024-12-13 20:50:59.661686",
+    "class_name": "Authenticator",
+    "func_name": "_decode_token",
+    "func_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDY1MGFjMjBmY2U4N2Y0NzIxZDU3IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMTk6NDM6MzUuMDMxMjUzIn0.Ui10dx6zXisnWUhz4Ywyisc2PlGGfw4AZpxUXXrzTYI",
+    "func_output": "{'user_id': '6750650ac20fce87f4721d57', 'created': '2024-12-06T19:43:35.031253'}"
+  },
+  {
+    "id": 108,
+    "datetime": "2024-12-13 20:50:59.688077",
+    "class_name": "Authenticator",
+    "func_name": "authenticate_client",
+    "func_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDY1MGFjMjBmY2U4N2Y0NzIxZDU3IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMTk6NDM6MzUuMDMxMjUzIn0.Ui10dx6zXisnWUhz4Ywyisc2PlGGfw4AZpxUXXrzTYI",
+    "func_output": "6750650ac20fce87f4721d57"
+  },
+  {
+    "id": 109,
+    "datetime": "2024-12-13 20:50:59.796343",
+    "class_name": "Users",
+    "func_name": "get_fields_by_id",
+    "func_input": "('6750650ac20fce87f4721d57', ['pets'])",
+    "func_output": "None"
+  },
+  {
+    "id": 110,
+    "datetime": "2024-12-13 20:50:59.819357",
+    "class_name": "PetDataHandler",
+    "func_name": "pull_all_pets_data",
+    "func_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDY1MGFjMjBmY2U4N2Y0NzIxZDU3IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMTk6NDM6MzUuMDMxMjUzIn0.Ui10dx6zXisnWUhz4Ywyisc2PlGGfw4AZpxUXXrzTYI",
+    "func_output": "[]"
+  },
+  {
+    "id": 111,
+    "datetime": "2024-12-13 20:50:59.847358",
+    "class_name": "Routes",
+    "func_name": "restore_pet_data",
+    "func_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDY1MGFjMjBmY2U4N2Y0NzIxZDU3IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMTk6NDM6MzUuMDMxMjUzIn0.Ui10dx6zXisnWUhz4Ywyisc2PlGGfw4AZpxUXXrzTYI",
+    "func_output": "{'internal_err': 'Unknown error occurred during login'}"
+  },
+  {
+    "id": 112,
+    "datetime": "2024-12-13 20:51:45.904425",
+    "class_name": "Authenticator",
+    "func_name": "_decode_token",
+    "func_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDY1MGFjMjBmY2U4N2Y0NzIxZDU3IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMTk6NDM6MzUuMDMxMjUzIn0.Ui10dx6zXisnWUhz4Ywyisc2PlGGfw4AZpxUXXrzTYI",
+    "func_output": "{'user_id': '6750650ac20fce87f4721d57', 'created': '2024-12-06T19:43:35.031253'}"
+  },
+  {
+    "id": 113,
+    "datetime": "2024-12-13 20:51:45.936432",
+    "class_name": "Authenticator",
+    "func_name": "authenticate_client",
+    "func_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDY1MGFjMjBmY2U4N2Y0NzIxZDU3IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMTk6NDM6MzUuMDMxMjUzIn0.Ui10dx6zXisnWUhz4Ywyisc2PlGGfw4AZpxUXXrzTYI",
+    "func_output": "6750650ac20fce87f4721d57"
+  },
+  {
+    "id": 114,
+    "datetime": "2024-12-13 20:51:46.013431",
+    "class_name": "Users",
+    "func_name": "get_fields_by_id",
+    "func_input": "('6750650ac20fce87f4721d57', ['pets'])",
+    "func_output": "None"
+  },
+  {
+    "id": 115,
+    "datetime": "2024-12-13 20:51:46.040428",
+    "class_name": "PetDataHandler",
+    "func_name": "pull_all_pets_data",
+    "func_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDY1MGFjMjBmY2U4N2Y0NzIxZDU3IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMTk6NDM6MzUuMDMxMjUzIn0.Ui10dx6zXisnWUhz4Ywyisc2PlGGfw4AZpxUXXrzTYI",
+    "func_output": "[]"
+  },
+  {
+    "id": 116,
+    "datetime": "2024-12-13 20:51:46.064430",
+    "class_name": "Routes",
+    "func_name": "restore_pet_data",
+    "func_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDY1MGFjMjBmY2U4N2Y0NzIxZDU3IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMTk6NDM6MzUuMDMxMjUzIn0.Ui10dx6zXisnWUhz4Ywyisc2PlGGfw4AZpxUXXrzTYI",
+    "func_output": "{'internal_err': 'Unknown error occurred'}"
+  },
+  {
+    "id": 117,
+    "datetime": "2024-12-13 20:54:26.134896",
+    "class_name": "Authenticator",
+    "func_name": "_decode_token",
+    "func_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDY1MGFjMjBmY2U4N2Y0NzIxZDU3IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMTk6NDM6MzUuMDMxMjUzIn0.Ui10dx6zXisnWUhz4Ywyisc2PlGGfw4AZpxUXXrzTYI",
+    "func_output": "{'user_id': '6750650ac20fce87f4721d57', 'created': '2024-12-06T19:43:35.031253'}"
+  },
+  {
+    "id": 118,
+    "datetime": "2024-12-13 20:54:26.165898",
+    "class_name": "Authenticator",
+    "func_name": "authenticate_client",
+    "func_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDY1MGFjMjBmY2U4N2Y0NzIxZDU3IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMTk6NDM6MzUuMDMxMjUzIn0.Ui10dx6zXisnWUhz4Ywyisc2PlGGfw4AZpxUXXrzTYI",
+    "func_output": "6750650ac20fce87f4721d57"
+  },
+  {
+    "id": 119,
+    "datetime": "2024-12-13 20:54:26.233893",
+    "class_name": "Users",
+    "func_name": "get_fields_by_id",
+    "func_input": "('6750650ac20fce87f4721d57', ['pets'])",
+    "func_output": "None"
+  },
+  {
+    "id": 120,
+    "datetime": "2024-12-13 20:54:26.258905",
+    "class_name": "PetDataHandler",
+    "func_name": "pull_all_pets_data",
+    "func_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDY1MGFjMjBmY2U4N2Y0NzIxZDU3IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMTk6NDM6MzUuMDMxMjUzIn0.Ui10dx6zXisnWUhz4Ywyisc2PlGGfw4AZpxUXXrzTYI",
+    "func_output": "[]"
+  },
+  {
+    "id": 121,
+    "datetime": "2024-12-13 20:54:26.283920",
+    "class_name": "Routes",
+    "func_name": "restore_pet_data",
+    "func_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDY1MGFjMjBmY2U4N2Y0NzIxZDU3IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMTk6NDM6MzUuMDMxMjUzIn0.Ui10dx6zXisnWUhz4Ywyisc2PlGGfw4AZpxUXXrzTYI",
+    "func_output": "[]"
+  },
+  {
+    "id": 122,
+    "datetime": "2024-12-13 20:56:59.436273",
+    "class_name": "Routes",
+    "func_name": "add_pet",
+    "func_input": "(None, 'no data')",
+    "func_output": "{'user_err': 'Incomplete or no data provided'}"
+  },
+  {
+    "id": 123,
+    "datetime": "2024-12-13 20:57:07.474467",
+    "class_name": "Routes",
+    "func_name": "add_pet",
+    "func_input": "('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDY1MGFjMjBmY2U4N2Y0NzIxZDU3IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMTk6NDM6MzUuMDMxMjUzIn0.Ui10dx6zXisnWUhz4Ywyisc2PlGGfw4AZpxUXXrzTYI', {'email': 'artyom1100@gmail.com', 'phone': '05222', 'nickname': 'LooseyMoosey'})",
+    "func_output": "{'user_err': 'Incomplete or no data provided'}"
+  },
+  {
+    "id": 124,
+    "datetime": "2024-12-13 20:57:46.661022",
+    "class_name": "Authenticator",
+    "func_name": "_decode_token",
+    "func_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDY1MGFjMjBmY2U4N2Y0NzIxZDU3IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMTk6NDM6MzUuMDMxMjUzIn0.Ui10dx6zXisnWUhz4Ywyisc2PlGGfw4AZpxUXXrzTYI",
+    "func_output": "{'user_id': '6750650ac20fce87f4721d57', 'created': '2024-12-06T19:43:35.031253'}"
+  },
+  {
+    "id": 125,
+    "datetime": "2024-12-13 20:57:46.686001",
+    "class_name": "Authenticator",
+    "func_name": "authenticate_client",
+    "func_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDY1MGFjMjBmY2U4N2Y0NzIxZDU3IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMTk6NDM6MzUuMDMxMjUzIn0.Ui10dx6zXisnWUhz4Ywyisc2PlGGfw4AZpxUXXrzTYI",
+    "func_output": "6750650ac20fce87f4721d57"
+  },
+  {
+    "id": 126,
+    "datetime": "2024-12-13 20:57:46.755999",
+    "class_name": "Pets",
+    "func_name": "add",
+    "func_input": "{'name': 'bookie', 'user_id': '6750650ac20fce87f4721d57', '_id': ObjectId('675c83aacd7b06b850855217')}",
+    "func_output": "675c83aacd7b06b850855217"
+  },
+  {
+    "id": 127,
+    "datetime": "2024-12-13 20:57:46.784024",
+    "class_name": "Users",
+    "func_name": "get_fields_by_id",
+    "func_input": "('6750650ac20fce87f4721d57', ['pets'])",
+    "func_output": "None"
+  },
+  {
+    "id": 128,
+    "datetime": "2024-12-13 20:57:46.819987",
+    "class_name": "Users",
+    "func_name": "update",
+    "func_input": "('6750650ac20fce87f4721d57', {'pets': ['675c83aacd7b06b850855217']})",
+    "func_output": "False"
+  },
+  {
+    "id": 129,
+    "datetime": "2024-12-13 20:57:46.848013",
+    "class_name": "PetDataHandler",
+    "func_name": "add_pet",
+    "func_input": "('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDY1MGFjMjBmY2U4N2Y0NzIxZDU3IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMTk6NDM6MzUuMDMxMjUzIn0.Ui10dx6zXisnWUhz4Ywyisc2PlGGfw4AZpxUXXrzTYI', {'name': 'bookie', 'user_id': '6750650ac20fce87f4721d57', '_id': ObjectId('675c83aacd7b06b850855217')})",
+    "func_output": "False"
+  },
+  {
+    "id": 130,
+    "datetime": "2024-12-13 20:57:46.881007",
+    "class_name": "Routes",
+    "func_name": "add_pet",
+    "func_input": "('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDY1MGFjMjBmY2U4N2Y0NzIxZDU3IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMTk6NDM6MzUuMDMxMjUzIn0.Ui10dx6zXisnWUhz4Ywyisc2PlGGfw4AZpxUXXrzTYI', {'pet_data': {'name': 'bookie', 'user_id': '6750650ac20fce87f4721d57', '_id': ObjectId('675c83aacd7b06b850855217')}})",
+    "func_output": "False"
+  },
+  {
+    "id": 131,
+    "datetime": "2024-12-13 21:00:44.527078",
+    "class_name": "Authenticator",
+    "func_name": "_decode_token",
+    "func_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA",
+    "func_output": "{'user_id': '67505e920f8a2f4820c299c4', 'created': '2024-12-06T02:56:55.633318'}"
+  },
+  {
+    "id": 132,
+    "datetime": "2024-12-13 21:00:44.581087",
+    "class_name": "Authenticator",
+    "func_name": "authenticate_client",
+    "func_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA",
+    "func_output": "67505e920f8a2f4820c299c4"
+  },
+  {
+    "id": 133,
+    "datetime": "2024-12-13 21:00:44.656273",
+    "class_name": "Pets",
+    "func_name": "add",
+    "func_input": "{'name': 'bookie', 'user_id': '67505e920f8a2f4820c299c4', '_id': ObjectId('675c845c3e5728b4bd8ccd50')}",
+    "func_output": "675c845c3e5728b4bd8ccd50"
+  },
+  {
+    "id": 134,
+    "datetime": "2024-12-13 21:00:44.684261",
+    "class_name": "Users",
+    "func_name": "get_fields_by_id",
+    "func_input": "('67505e920f8a2f4820c299c4', ['pets'])",
+    "func_output": "None"
+  },
+  {
+    "id": 135,
+    "datetime": "2024-12-13 21:00:44.715254",
+    "class_name": "Users",
+    "func_name": "update",
+    "func_input": "('67505e920f8a2f4820c299c4', {'pets': ['675c845c3e5728b4bd8ccd50']})",
+    "func_output": "True"
+  },
+  {
+    "id": 136,
+    "datetime": "2024-12-13 21:00:44.745254",
+    "class_name": "PetDataHandler",
+    "func_name": "add_pet",
+    "func_input": "('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA', {'name': 'bookie', 'user_id': '67505e920f8a2f4820c299c4', '_id': ObjectId('675c845c3e5728b4bd8ccd50')})",
+    "func_output": "True"
+  },
+  {
+    "id": 137,
+    "datetime": "2024-12-13 21:00:44.773256",
+    "class_name": "Routes",
+    "func_name": "add_pet",
+    "func_input": "('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA', {'pet_data': {'name': 'bookie', 'user_id': '67505e920f8a2f4820c299c4', '_id': ObjectId('675c845c3e5728b4bd8ccd50')}})",
+    "func_output": "True"
+  },
+  {
+    "id": 138,
+    "datetime": "2024-12-13 21:02:49.931055",
+    "class_name": "Authenticator",
+    "func_name": "_decode_token",
+    "func_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA",
+    "func_output": "{'user_id': '67505e920f8a2f4820c299c4', 'created': '2024-12-06T02:56:55.633318'}"
+  },
+  {
+    "id": 139,
+    "datetime": "2024-12-13 21:02:50.003055",
+    "class_name": "Users",
+    "func_name": "get_obj_by_id",
+    "func_input": "67505e920f8a2f4820c299c4",
+    "func_output": "{'_id': ObjectId('67505e920f8a2f4820c299c4'), 'email': 'artyom1100@gmail.com', 'phone': '05222', 'nickname': 'LooseyMoosey', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA', 'email_code': 302373, 'pets': ['675c845c3e5728b4bd8ccd50']}"
+  },
+  {
+    "id": 140,
+    "datetime": "2024-12-13 21:02:50.037031",
+    "class_name": "Authenticator",
+    "func_name": "authenticate_client",
+    "func_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA",
+    "func_output": "67505e920f8a2f4820c299c4"
+  },
+  {
+    "id": 141,
+    "datetime": "2024-12-13 21:02:50.072032",
+    "class_name": "Pets",
+    "func_name": "add",
+    "func_input": "{'name': 'bookie', 'user_id': '67505e920f8a2f4820c299c4', '_id': ObjectId('675c84daa8d6984de01fdd29')}",
+    "func_output": "675c84daa8d6984de01fdd29"
+  },
+  {
+    "id": 142,
+    "datetime": "2024-12-13 21:02:50.103034",
+    "class_name": "Users",
+    "func_name": "get_fields_by_id",
+    "func_input": "('67505e920f8a2f4820c299c4', ['pets'])",
+    "func_output": "{'pets': ['675c845c3e5728b4bd8ccd50']}"
+  },
+  {
+    "id": 143,
+    "datetime": "2024-12-13 21:02:50.135033",
+    "class_name": "Users",
+    "func_name": "update",
+    "func_input": "('67505e920f8a2f4820c299c4', {'pets': ['675c84daa8d6984de01fdd29', '675c845c3e5728b4bd8ccd50']})",
+    "func_output": "True"
+  },
+  {
+    "id": 144,
+    "datetime": "2024-12-13 21:02:50.162028",
+    "class_name": "PetDataHandler",
+    "func_name": "add_pet",
+    "func_input": "('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA', {'name': 'bookie', 'user_id': '67505e920f8a2f4820c299c4', '_id': ObjectId('675c84daa8d6984de01fdd29')})",
+    "func_output": "True"
+  },
+  {
+    "id": 145,
+    "datetime": "2024-12-13 21:02:50.189036",
+    "class_name": "Routes",
+    "func_name": "add_pet",
+    "func_input": "('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA', {'pet_data': {'name': 'bookie', 'user_id': '67505e920f8a2f4820c299c4', '_id': ObjectId('675c84daa8d6984de01fdd29')}})",
+    "func_output": "True"
+  },
+  {
+    "id": 146,
+    "datetime": "2024-12-13 21:06:15.528729",
+    "class_name": "Authenticator",
+    "func_name": "_decode_token",
+    "func_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA",
+    "func_output": "{'user_id': '67505e920f8a2f4820c299c4', 'created': '2024-12-06T02:56:55.633318'}"
+  },
+  {
+    "id": 147,
+    "datetime": "2024-12-13 21:06:15.596275",
+    "class_name": "Users",
+    "func_name": "get_obj_by_id",
+    "func_input": "67505e920f8a2f4820c299c4",
+    "func_output": "{'_id': ObjectId('67505e920f8a2f4820c299c4'), 'email': 'artyom1100@gmail.com', 'phone': '05222', 'nickname': 'LooseyMoosey', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA', 'email_code': 302373, 'pets': ['675c84daa8d6984de01fdd29', '675c845c3e5728b4bd8ccd50']}"
+  },
+  {
+    "id": 148,
+    "datetime": "2024-12-13 21:06:15.622282",
+    "class_name": "Authenticator",
+    "func_name": "authenticate_client",
+    "func_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA",
+    "func_output": "67505e920f8a2f4820c299c4"
+  },
+  {
+    "id": 149,
+    "datetime": "2024-12-13 21:06:15.649283",
+    "class_name": "Pets",
+    "func_name": "get_obj_by_id",
+    "func_input": "675c845c3e5728b4bd8ccd50",
+    "func_output": "{'_id': ObjectId('675c845c3e5728b4bd8ccd50'), 'name': 'bookie', 'user_id': '67505e920f8a2f4820c299c4'}"
+  },
+  {
+    "id": 150,
+    "datetime": "2024-12-13 21:06:15.676281",
+    "class_name": "Pets",
+    "func_name": "update",
+    "func_input": "('675c845c3e5728b4bd8ccd50', {'name': 'baclawa', 'color': 'white'})",
+    "func_output": "True"
+  },
+  {
+    "id": 151,
+    "datetime": "2024-12-13 21:06:15.702446",
+    "class_name": "PetDataHandler",
+    "func_name": "update_pet",
+    "func_input": "('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA', '675c845c3e5728b4bd8ccd50', {'name': 'baclawa', 'color': 'white'})",
+    "func_output": "True"
+  },
+  {
+    "id": 152,
+    "datetime": "2024-12-13 21:06:15.727442",
+    "class_name": "Routes",
+    "func_name": "update_pet",
+    "func_input": "('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA', {'pet_data': {'name': 'baclawa', 'color': 'white'}})",
+    "func_output": "True"
+  },
+  {
+    "id": 153,
+    "datetime": "2024-12-13 21:06:22.408386",
+    "class_name": "Routes",
+    "func_name": "update_pet",
+    "func_input": "('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA', 'no data')",
+    "func_output": "{'user_err': 'Incomplete or no data provided'}"
+  },
+  {
+    "id": 154,
+    "datetime": "2024-12-13 21:06:36.726924",
+    "class_name": "Routes",
+    "func_name": "update_pet",
+    "func_input": "(None, 'no data')",
+    "func_output": "{'user_err': 'Incomplete or no data provided'}"
+  },
+  {
+    "id": 155,
+    "datetime": "2024-12-13 21:06:41.500907",
+    "class_name": "Authenticator",
+    "func_name": "_decode_token",
+    "func_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA",
+    "func_output": "{'user_id': '67505e920f8a2f4820c299c4', 'created': '2024-12-06T02:56:55.633318'}"
+  },
+  {
+    "id": 156,
+    "datetime": "2024-12-13 21:06:41.576384",
+    "class_name": "Users",
+    "func_name": "get_obj_by_id",
+    "func_input": "67505e920f8a2f4820c299c4",
+    "func_output": "{'_id': ObjectId('67505e920f8a2f4820c299c4'), 'email': 'artyom1100@gmail.com', 'phone': '05222', 'nickname': 'LooseyMoosey', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA', 'email_code': 302373, 'pets': ['675c84daa8d6984de01fdd29', '675c845c3e5728b4bd8ccd50']}"
+  },
+  {
+    "id": 157,
+    "datetime": "2024-12-13 21:06:41.603169",
+    "class_name": "Authenticator",
+    "func_name": "authenticate_client",
+    "func_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA",
+    "func_output": "67505e920f8a2f4820c299c4"
+  },
+  {
+    "id": 158,
+    "datetime": "2024-12-13 21:06:41.632169",
+    "class_name": "Pets",
+    "func_name": "get_obj_by_id",
+    "func_input": "675c845c3e5728b4bd8ccd50",
+    "func_output": "{'_id': ObjectId('675c845c3e5728b4bd8ccd50'), 'name': 'baclawa', 'user_id': '67505e920f8a2f4820c299c4', 'color': 'white'}"
+  },
+  {
+    "id": 159,
+    "datetime": "2024-12-13 21:06:41.662173",
+    "class_name": "Pets",
+    "func_name": "update",
+    "func_input": "('675c845c3e5728b4bd8ccd50', {'name': 'baclawa', 'color': 'white'})",
+    "func_output": "False"
+  },
+  {
+    "id": 160,
+    "datetime": "2024-12-13 21:06:41.690160",
+    "class_name": "PetDataHandler",
+    "func_name": "update_pet",
+    "func_input": "('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA', '675c845c3e5728b4bd8ccd50', {'name': 'baclawa', 'color': 'white'})",
+    "func_output": "False"
+  },
+  {
+    "id": 161,
+    "datetime": "2024-12-13 21:06:41.718155",
+    "class_name": "Routes",
+    "func_name": "update_pet",
+    "func_input": "('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA', {'pet_data': {'name': 'baclawa', 'color': 'white'}})",
+    "func_output": "False"
+  },
+  {
+    "id": 162,
+    "datetime": "2024-12-13 21:06:52.181758",
+    "class_name": "Authenticator",
+    "func_name": "_decode_token",
+    "func_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA",
+    "func_output": "{'user_id': '67505e920f8a2f4820c299c4', 'created': '2024-12-06T02:56:55.633318'}"
+  },
+  {
+    "id": 163,
+    "datetime": "2024-12-13 21:06:52.252748",
+    "class_name": "Users",
+    "func_name": "get_obj_by_id",
+    "func_input": "67505e920f8a2f4820c299c4",
+    "func_output": "{'_id': ObjectId('67505e920f8a2f4820c299c4'), 'email': 'artyom1100@gmail.com', 'phone': '05222', 'nickname': 'LooseyMoosey', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA', 'email_code': 302373, 'pets': ['675c84daa8d6984de01fdd29', '675c845c3e5728b4bd8ccd50']}"
+  },
+  {
+    "id": 164,
+    "datetime": "2024-12-13 21:06:52.281740",
+    "class_name": "Authenticator",
+    "func_name": "authenticate_client",
+    "func_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA",
+    "func_output": "67505e920f8a2f4820c299c4"
+  },
+  {
+    "id": 165,
+    "datetime": "2024-12-13 21:06:52.313757",
+    "class_name": "Pets",
+    "func_name": "get_obj_by_id",
+    "func_input": "675c845c3e5728b4bd8ccd50",
+    "func_output": "{'_id': ObjectId('675c845c3e5728b4bd8ccd50'), 'name': 'baclawa', 'user_id': '67505e920f8a2f4820c299c4', 'color': 'white'}"
+  },
+  {
+    "id": 166,
+    "datetime": "2024-12-13 21:06:52.343739",
+    "class_name": "Pets",
+    "func_name": "update",
+    "func_input": "('675c845c3e5728b4bd8ccd50', {'name': 'baclawa', 'color': 'white'})",
+    "func_output": "False"
+  },
+  {
+    "id": 167,
+    "datetime": "2024-12-13 21:06:52.371740",
+    "class_name": "PetDataHandler",
+    "func_name": "update_pet",
+    "func_input": "('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA', '675c845c3e5728b4bd8ccd50', {'name': 'baclawa', 'color': 'white'})",
+    "func_output": "False"
+  },
+  {
+    "id": 168,
+    "datetime": "2024-12-13 21:06:52.401731",
+    "class_name": "Routes",
+    "func_name": "update_pet",
+    "func_input": "('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA', {'pet_data': {'name': 'baclawa', 'color': 'white'}})",
+    "func_output": "False"
+  },
+  {
+    "id": 169,
+    "datetime": "2024-12-13 21:08:40.407610",
+    "class_name": "Authenticator",
+    "func_name": "_decode_token",
+    "func_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA",
+    "func_output": "{'user_id': '67505e920f8a2f4820c299c4', 'created': '2024-12-06T02:56:55.633318'}"
+  },
+  {
+    "id": 170,
+    "datetime": "2024-12-13 21:08:40.479607",
+    "class_name": "Users",
+    "func_name": "get_obj_by_id",
+    "func_input": "67505e920f8a2f4820c299c4",
+    "func_output": "{'_id': ObjectId('67505e920f8a2f4820c299c4'), 'email': 'artyom1100@gmail.com', 'phone': '05222', 'nickname': 'LooseyMoosey', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA', 'email_code': 302373, 'pets': ['675c84daa8d6984de01fdd29', '675c845c3e5728b4bd8ccd50']}"
+  },
+  {
+    "id": 171,
+    "datetime": "2024-12-13 21:08:40.509618",
+    "class_name": "Authenticator",
+    "func_name": "authenticate_client",
+    "func_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA",
+    "func_output": "67505e920f8a2f4820c299c4"
+  },
+  {
+    "id": 172,
+    "datetime": "2024-12-13 21:08:40.549627",
+    "class_name": "Pets",
+    "func_name": "get_obj_by_id",
+    "func_input": "675c845c3e5728b4bd8ccd50",
+    "func_output": "{'_id': ObjectId('675c845c3e5728b4bd8ccd50'), 'name': 'baclawa', 'user_id': '67505e920f8a2f4820c299c4', 'color': 'white'}"
+  },
+  {
+    "id": 173,
+    "datetime": "2024-12-13 21:08:40.588608",
+    "class_name": "Pets",
+    "func_name": "update",
+    "func_input": "('675c845c3e5728b4bd8ccd50', {'name': 'baclawa', 'color': 'white'})",
+    "func_output": "False"
+  },
+  {
+    "id": 174,
+    "datetime": "2024-12-13 21:08:40.619615",
+    "class_name": "PetDataHandler",
+    "func_name": "update_pet",
+    "func_input": "('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA', '675c845c3e5728b4bd8ccd50', {'name': 'baclawa', 'color': 'white'})",
+    "func_output": "False"
+  },
+  {
+    "id": 175,
+    "datetime": "2024-12-13 21:08:40.653608",
+    "class_name": "Routes",
+    "func_name": "update_pet",
+    "func_input": "('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA', {'pet_data': {'name': 'baclawa', 'color': 'white'}})",
+    "func_output": "False"
+  },
+  {
+    "id": 176,
+    "datetime": "2024-12-13 21:08:45.473947",
+    "class_name": "Authenticator",
+    "func_name": "_decode_token",
+    "func_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA",
+    "func_output": "{'user_id': '67505e920f8a2f4820c299c4', 'created': '2024-12-06T02:56:55.633318'}"
+  },
+  {
+    "id": 177,
+    "datetime": "2024-12-13 21:08:45.538947",
+    "class_name": "Users",
+    "func_name": "get_obj_by_id",
+    "func_input": "67505e920f8a2f4820c299c4",
+    "func_output": "{'_id': ObjectId('67505e920f8a2f4820c299c4'), 'email': 'artyom1100@gmail.com', 'phone': '05222', 'nickname': 'LooseyMoosey', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA', 'email_code': 302373, 'pets': ['675c84daa8d6984de01fdd29', '675c845c3e5728b4bd8ccd50']}"
+  },
+  {
+    "id": 178,
+    "datetime": "2024-12-13 21:08:45.569951",
+    "class_name": "Authenticator",
+    "func_name": "authenticate_client",
+    "func_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA",
+    "func_output": "67505e920f8a2f4820c299c4"
+  },
+  {
+    "id": 179,
+    "datetime": "2024-12-13 21:08:45.608945",
+    "class_name": "Pets",
+    "func_name": "get_obj_by_id",
+    "func_input": "675c845c3e5728b4bd8ccd50",
+    "func_output": "{'_id': ObjectId('675c845c3e5728b4bd8ccd50'), 'name': 'baclawa', 'user_id': '67505e920f8a2f4820c299c4', 'color': 'white'}"
+  },
+  {
+    "id": 180,
+    "datetime": "2024-12-13 21:08:45.640953",
+    "class_name": "Pets",
+    "func_name": "update",
+    "func_input": "('675c845c3e5728b4bd8ccd50', {'name': 'baclawa', 'color': 'green'})",
+    "func_output": "True"
+  },
+  {
+    "id": 181,
+    "datetime": "2024-12-13 21:08:45.668949",
+    "class_name": "PetDataHandler",
+    "func_name": "update_pet",
+    "func_input": "('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA', '675c845c3e5728b4bd8ccd50', {'name': 'baclawa', 'color': 'green'})",
+    "func_output": "True"
+  },
+  {
+    "id": 182,
+    "datetime": "2024-12-13 21:08:45.696950",
+    "class_name": "Routes",
+    "func_name": "update_pet",
+    "func_input": "('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA', {'pet_data': {'name': 'baclawa', 'color': 'green'}})",
+    "func_output": "True"
+  },
+  {
+    "id": 183,
+    "datetime": "2024-12-13 21:11:30.247698",
+    "class_name": "Authenticator",
+    "func_name": "_decode_token",
+    "func_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA",
+    "func_output": "{'user_id': '67505e920f8a2f4820c299c4', 'created': '2024-12-06T02:56:55.633318'}"
+  },
+  {
+    "id": 184,
+    "datetime": "2024-12-13 21:11:30.378283",
+    "class_name": "Users",
+    "func_name": "get_obj_by_id",
+    "func_input": "67505e920f8a2f4820c299c4",
+    "func_output": "{'_id': ObjectId('67505e920f8a2f4820c299c4'), 'email': 'artyom1100@gmail.com', 'phone': '05222', 'nickname': 'LooseyMoosey', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA', 'email_code': 302373, 'pets': ['675c84daa8d6984de01fdd29', '675c845c3e5728b4bd8ccd50']}"
+  },
+  {
+    "id": 185,
+    "datetime": "2024-12-13 21:11:30.412195",
+    "class_name": "Authenticator",
+    "func_name": "authenticate_client",
+    "func_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA",
+    "func_output": "67505e920f8a2f4820c299c4"
+  },
+  {
+    "id": 186,
+    "datetime": "2024-12-13 21:11:30.444196",
+    "class_name": "Pets",
+    "func_name": "get_obj_by_id",
+    "func_input": "675c845c3e5728b4bd8ccd50",
+    "func_output": "{'_id': ObjectId('675c845c3e5728b4bd8ccd50'), 'name': 'baclawa', 'user_id': '67505e920f8a2f4820c299c4', 'color': 'green'}"
+  },
+  {
+    "id": 187,
+    "datetime": "2024-12-13 21:11:30.475817",
+    "class_name": "Pets",
+    "func_name": "update",
+    "func_input": "('675c845c3e5728b4bd8ccd50', {'name': 'baclawa', 'color': 'green'})",
+    "func_output": "True"
+  },
+  {
+    "id": 188,
+    "datetime": "2024-12-13 21:11:30.506821",
+    "class_name": "PetDataHandler",
+    "func_name": "update_pet",
+    "func_input": "('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA', '675c845c3e5728b4bd8ccd50', {'name': 'baclawa', 'color': 'green'})",
+    "func_output": "True"
+  },
+  {
+    "id": 189,
+    "datetime": "2024-12-13 21:11:30.545818",
+    "class_name": "Routes",
+    "func_name": "update_pet",
+    "func_input": "('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA', {'pet_data': {'name': 'baclawa', 'color': 'green'}})",
+    "func_output": "True"
+  },
+  {
+    "id": 190,
+    "datetime": "2024-12-13 21:11:38.124358",
+    "class_name": "Authenticator",
+    "func_name": "_decode_token",
+    "func_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA",
+    "func_output": "{'user_id': '67505e920f8a2f4820c299c4', 'created': '2024-12-06T02:56:55.633318'}"
+  },
+  {
+    "id": 191,
+    "datetime": "2024-12-13 21:11:38.179362",
+    "class_name": "Users",
+    "func_name": "get_obj_by_id",
+    "func_input": "67505e920f8a2f4820c299c4",
+    "func_output": "{'_id': ObjectId('67505e920f8a2f4820c299c4'), 'email': 'artyom1100@gmail.com', 'phone': '05222', 'nickname': 'LooseyMoosey', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA', 'email_code': 302373, 'pets': ['675c84daa8d6984de01fdd29', '675c845c3e5728b4bd8ccd50']}"
+  },
+  {
+    "id": 192,
+    "datetime": "2024-12-13 21:11:38.211362",
+    "class_name": "Authenticator",
+    "func_name": "authenticate_client",
+    "func_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA",
+    "func_output": "67505e920f8a2f4820c299c4"
+  },
+  {
+    "id": 193,
+    "datetime": "2024-12-13 21:11:38.249359",
+    "class_name": "Pets",
+    "func_name": "get_obj_by_id",
+    "func_input": "675c845c3e5728b4bd8ccd50",
+    "func_output": "{'_id': ObjectId('675c845c3e5728b4bd8ccd50'), 'name': 'baclawa', 'user_id': '67505e920f8a2f4820c299c4', 'color': 'green'}"
+  },
+  {
+    "id": 194,
+    "datetime": "2024-12-13 21:11:38.286358",
+    "class_name": "Pets",
+    "func_name": "update",
+    "func_input": "('675c845c3e5728b4bd8ccd50', {'name': 'baclawa', 'color': 'blue'})",
+    "func_output": "True"
+  },
+  {
+    "id": 195,
+    "datetime": "2024-12-13 21:11:38.322357",
+    "class_name": "PetDataHandler",
+    "func_name": "update_pet",
+    "func_input": "('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA', '675c845c3e5728b4bd8ccd50', {'name': 'baclawa', 'color': 'blue'})",
+    "func_output": "True"
+  },
+  {
+    "id": 196,
+    "datetime": "2024-12-13 21:11:38.357359",
+    "class_name": "Routes",
+    "func_name": "update_pet",
+    "func_input": "('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA', {'pet_data': {'name': 'baclawa', 'color': 'blue'}})",
+    "func_output": "True"
+  },
+  {
+    "id": 197,
+    "datetime": "2024-12-13 21:14:26.187939",
+    "class_name": "Authenticator",
+    "func_name": "_decode_token",
+    "func_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA",
+    "func_output": "{'user_id': '67505e920f8a2f4820c299c4', 'created': '2024-12-06T02:56:55.633318'}"
+  },
+  {
+    "id": 198,
+    "datetime": "2024-12-13 21:14:26.262946",
+    "class_name": "Users",
+    "func_name": "get_obj_by_id",
+    "func_input": "67505e920f8a2f4820c299c4",
+    "func_output": "{'_id': ObjectId('67505e920f8a2f4820c299c4'), 'email': 'artyom1100@gmail.com', 'phone': '05222', 'nickname': 'LooseyMoosey', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA', 'email_code': 302373, 'pets': ['675c84daa8d6984de01fdd29', '675c845c3e5728b4bd8ccd50']}"
+  },
+  {
+    "id": 199,
+    "datetime": "2024-12-13 21:14:26.291934",
+    "class_name": "Authenticator",
+    "func_name": "authenticate_client",
+    "func_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA",
+    "func_output": "67505e920f8a2f4820c299c4"
+  },
+  {
+    "id": 200,
+    "datetime": "2024-12-13 21:14:26.322942",
+    "class_name": "Pets",
+    "func_name": "get_obj_by_id",
+    "func_input": "675c845c3e5728b4bd8ccd50",
+    "func_output": "{'_id': ObjectId('675c845c3e5728b4bd8ccd50'), 'name': 'baclawa', 'user_id': '67505e920f8a2f4820c299c4', 'color': 'blue'}"
+  },
+  {
+    "id": 201,
+    "datetime": "2024-12-13 21:14:26.358942",
+    "class_name": "Pets",
+    "func_name": "delete_obj",
+    "func_input": "675c845c3e5728b4bd8ccd50",
+    "func_output": "True"
+  },
+  {
+    "id": 202,
+    "datetime": "2024-12-13 21:14:26.390958",
+    "class_name": "Users",
+    "func_name": "get_fields_by_id",
+    "func_input": "('67505e920f8a2f4820c299c4', ['pets'])",
+    "func_output": "{'pets': ['675c84daa8d6984de01fdd29', '675c845c3e5728b4bd8ccd50']}"
+  },
+  {
+    "id": 203,
+    "datetime": "2024-12-13 21:14:26.437958",
+    "class_name": "Users",
+    "func_name": "update",
+    "func_input": "('67505e920f8a2f4820c299c4', {'pets': ['675c84daa8d6984de01fdd29']})",
+    "func_output": "True"
+  },
+  {
+    "id": 204,
+    "datetime": "2024-12-13 21:14:26.502958",
+    "class_name": "PetDataHandler",
+    "func_name": "delete_pet",
+    "func_input": "('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA', '675c845c3e5728b4bd8ccd50')",
+    "func_output": "True"
+  },
+  {
+    "id": 205,
+    "datetime": "2024-12-13 21:14:26.565944",
+    "class_name": "Routes",
+    "func_name": "delete_pet",
+    "func_input": "('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA', '675c845c3e5728b4bd8ccd50')",
+    "func_output": "True"
+  },
+  {
+    "id": 206,
+    "datetime": "2024-12-13 21:14:28.915125",
+    "class_name": "Authenticator",
+    "func_name": "_decode_token",
+    "func_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA",
+    "func_output": "{'user_id': '67505e920f8a2f4820c299c4', 'created': '2024-12-06T02:56:55.633318'}"
+  },
+  {
+    "id": 207,
+    "datetime": "2024-12-13 21:14:28.970378",
+    "class_name": "Users",
+    "func_name": "get_obj_by_id",
+    "func_input": "67505e920f8a2f4820c299c4",
+    "func_output": "{'_id': ObjectId('67505e920f8a2f4820c299c4'), 'email': 'artyom1100@gmail.com', 'phone': '05222', 'nickname': 'LooseyMoosey', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA', 'email_code': 302373, 'pets': ['675c84daa8d6984de01fdd29']}"
+  },
+  {
+    "id": 208,
+    "datetime": "2024-12-13 21:14:28.997377",
+    "class_name": "Authenticator",
+    "func_name": "authenticate_client",
+    "func_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA",
+    "func_output": "67505e920f8a2f4820c299c4"
+  },
+  {
+    "id": 209,
+    "datetime": "2024-12-13 21:14:29.027382",
+    "class_name": "Pets",
+    "func_name": "get_obj_by_id",
+    "func_input": "675c845c3e5728b4bd8ccd50",
+    "func_output": "None"
+  },
+  {
+    "id": 210,
+    "datetime": "2024-12-13 21:14:29.055176",
+    "class_name": "PetDataHandler",
+    "func_name": "delete_pet",
+    "func_input": "('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA', '675c845c3e5728b4bd8ccd50')",
+    "func_output": "'NoneType' object has no attribute 'get'"
+  },
+  {
+    "id": 211,
+    "datetime": "2024-12-13 21:14:29.085176",
+    "class_name": "Routes",
+    "func_name": "delete_pet",
+    "func_input": "('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA', '675c845c3e5728b4bd8ccd50')",
+    "func_output": "False"
+  },
+  {
+    "id": 212,
+    "datetime": "2024-12-17 04:29:54.046238",
+    "class_name": "Authenticator",
+    "func_name": "_decode_token",
+    "func_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA",
+    "func_output": "{'user_id': '67505e920f8a2f4820c299c4', 'created': '2024-12-06T02:56:55.633318'}"
+  },
+  {
+    "id": 213,
+    "datetime": "2024-12-17 04:29:54.190238",
+    "class_name": "Users",
+    "func_name": "get_obj_by_id",
+    "func_input": "67505e920f8a2f4820c299c4",
+    "func_output": "{'_id': ObjectId('67505e920f8a2f4820c299c4'), 'email': 'artyom1100@gmail.com', 'phone': '05222', 'nickname': 'LooseyMoosey', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA', 'email_code': 302373, 'pets': ['675c84daa8d6984de01fdd29']}"
+  },
+  {
+    "id": 214,
+    "datetime": "2024-12-17 04:29:54.221240",
+    "class_name": "Authenticator",
+    "func_name": "authenticate_client",
+    "func_input": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA",
+    "func_output": "67505e920f8a2f4820c299c4"
+  },
+  {
+    "id": 215,
+    "datetime": "2024-12-17 04:29:54.284242",
+    "class_name": "Pets",
+    "func_name": "add",
+    "func_input": "{'name': 'baclawa', 'color': 'blue', 'user_id': '67505e920f8a2f4820c299c4', '_id': ObjectId('6760e222d9e3c013cb9cb73b')}",
+    "func_output": "6760e222d9e3c013cb9cb73b"
+  },
+  {
+    "id": 216,
+    "datetime": "2024-12-17 04:29:54.314244",
+    "class_name": "Users",
+    "func_name": "get_fields_by_id",
+    "func_input": "('67505e920f8a2f4820c299c4', ['pets'])",
+    "func_output": "{'pets': ['675c84daa8d6984de01fdd29']}"
+  },
+  {
+    "id": 217,
+    "datetime": "2024-12-17 04:29:54.356238",
+    "class_name": "Users",
+    "func_name": "update",
+    "func_input": "('67505e920f8a2f4820c299c4', {'pets': ['6760e222d9e3c013cb9cb73b', '675c84daa8d6984de01fdd29']})",
+    "func_output": "True"
+  },
+  {
+    "id": 218,
+    "datetime": "2024-12-17 04:29:54.385240",
+    "class_name": "PetDataHandler",
+    "func_name": "add_pet",
+    "func_input": "('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA', {'name': 'baclawa', 'color': 'blue', 'user_id': '67505e920f8a2f4820c299c4', '_id': ObjectId('6760e222d9e3c013cb9cb73b')})",
+    "func_output": "6760e222d9e3c013cb9cb73b"
+  },
+  {
+    "id": 219,
+    "datetime": "2024-12-17 04:29:54.412240",
+    "class_name": "Routes",
+    "func_name": "add_pet",
+    "func_input": "('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1MDVlOTIwZjhhMmY0ODIwYzI5OWM0IiwiY3JlYXRlZCI6IjIwMjQtMTItMDZUMDI6NTY6NTUuNjMzMzE4In0.O5esqWi0T7LD_qY0wviO2yp1SiQd_aUpC0upVRwCWAA', {'pet_data': {'name': 'baclawa', 'color': 'blue', 'user_id': '67505e920f8a2f4820c299c4', '_id': ObjectId('6760e222d9e3c013cb9cb73b')}})",
+    "func_output": "6760e222d9e3c013cb9cb73b"
+  }
+]

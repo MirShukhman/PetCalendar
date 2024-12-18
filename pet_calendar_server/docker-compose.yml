@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: ./app
+    ports:
+      - "5002:5002"
+    environment:
+      - FLASK_ENV=development
+      - MONGO_URI=mongodb://${DB_USERNAME}:${DB_PASSWORD}@mongo:27017/${DB_NAME}?authSource=admin
+    depends_on:
+      - mongo
+    volumes:
+      - ./app:/app
+    env_file:
+      - .env
+
+  mongo:
+    image: mongo:6.0
+    container_name: mongo
+    ports:
+      - "27017:27017"
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=admin
+      - MONGO_INITDB_ROOT_PASSWORD=adminpassword
+    volumes:
+      - mongo_data:/data/db
+      - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js
+
+volumes:
+  mongo_data:
